@@ -1,0 +1,183 @@
+
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %} {% endblock %}
+{% block meta %} {% endblock %}
+{% block content %} 
+        <!-- Preloader -->
+        {% comment %} <div class="loader">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="sk-folding-cube">
+                        <div class="sk-cube1 sk-cube"></div>
+                        <div class="sk-cube2 sk-cube"></div>
+                        <div class="sk-cube4 sk-cube"></div>
+                        <div class="sk-cube3 sk-cube"></div>
+                    </div>
+                </div>
+            </div>
+        </div> {% endcomment %}
+        <!-- End Preloader -->
+
+        <!-- Navbar -->
+        {% include 'inc/navbar.html' %}
+        <!-- End Navbar -->
+        <h1>{{ selected_team }}</h1>
+        <!-- Page Title -->
+        <div class="page-title-area title-img-one">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="page-title-text">
+                        <h2>Our Attorneys</h2>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <i class="icofont-simple-right"></i>
+                            </li>
+                            <li>Attorneys</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title -->
+        <h2 class="text-center mt-5">Team menbers in chennai</h2>
+        <!-- Team -->
+        <section class="team-area team-area-two pt-100">
+            <div class="container">
+                <div class="row justify-content-start">
+                    {% for item in teammembers %}
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="team-item wow fadeInUp" data-wow-delay=".3s">
+                            <img src="{{ item.image.url }}" alt="Team">
+                            <div class="team-inner">
+                                <ul>
+                                    {% if item.facebook %}
+                                    <li>
+                                        <a href="{{ item.facebook }}" target="_blank">
+                                            <i class="icofont-facebook"></i>
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                    {% if item.instagram %}
+                                    <li>
+                                        <a href="{{ item.instagram }}" target="_blank">
+                                            <i class="icofont-instagram"></i>
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                    {% if item.twitter %}
+                                    <li>
+                                        <a href="{{ item.twitter }}" target="_blank">
+                                            <i class="icofont-twitter"></i>
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                    {% if item.linkedin %}
+                                    <li>
+                                        <a href="{{ item.linkedin }}" target="_blank">
+                                            <i class="icofont-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    {% endif %}
+                                </ul>
+                                <h3>
+                                    <a href="{% url 'attorney-details' item.id %}">{{ item.name }}</a>
+                                </h3>
+                                <span>{{item.consultant}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <!-- End Team -->
+
+
+        <div class="container" >
+            <form method="post" class=" mb-5 d-flex justify-content-center align-items-center">
+                {% csrf_token %}
+                <div class=" mx-5">
+                 
+                    <select name="district" id="district" class="form-select bg-secondary text-white" required>
+                        <option value="">Select district</option>
+                        {% for item in districts %}
+                        <option value="{{ item.id }}">{{ item.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        
+
+      {% if selected_team %}
+                <!-- Team -->
+                <section class="team-area team-area-two pt-25">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            {% for item in selected_team %}
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="team-item wow fadeInUp" data-wow-delay=".3s">
+                                    <img src="{{ item.image.url }}" alt="Team">
+                                    <div class="team-inner">
+                                        <ul>
+                                            {% if item.facebook %}
+                                            <li>
+                                                <a href="{{ item.facebook }}" target="_blank">
+                                                    <i class="icofont-facebook"></i>
+                                                </a>
+                                            </li>
+                                            {% endif %}
+                                            {% if item.instagram %}
+                                            <li>
+                                                <a href="{{ item.instagram }}" target="_blank">
+                                                    <i class="icofont-instagram"></i>
+                                                </a>
+                                            </li>
+                                            {% endif %}
+                                            {% if item.twitter %}
+                                            <li>
+                                                <a href="{{ item.twitter }}" target="_blank">
+                                                    <i class="icofont-twitter"></i>
+                                                </a>
+                                            </li>
+                                            {% endif %}
+                                            {% if item.linkedin %}
+                                            <li>
+                                                <a href="{{ item.linkedin }}" target="_blank">
+                                                    <i class="icofont-linkedin"></i>
+                                                </a>
+                                            </li>
+                                            {% endif %}
+                                        </ul>
+                                        <h3>
+                                            <a href="{% url 'attorney-details' item.id %}">{{ item.name }}</a>
+                                        </h3>
+                                        <span>{{item.consultant}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </section>
+                <!-- End Team -->
+      {% else %}
+      {% if request.method == 'POST' %}
+      <p class='text-black'>No attorneys found for {{selected_district}} </p>
+      {% endif %}
+      {% endif %}
+
+{% endblock content %} 
