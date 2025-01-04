@@ -1,9 +1,10 @@
+{% load static %}
 <footer>
             
     <!-- Newsletter -->
     <div class="newsletter-area">
         <div class="container">
-            <img src="assets/img/home-one/newsletter.png" alt="Shape">
+            <img src="{% static 'assets/img/home-one/newsletter.png' %}" alt="Shape">
             <h2>Subscribe Newsletter</h2>
             <form class="newsletter-form" data-toggle="validator">
                 <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
@@ -24,7 +25,7 @@
                 <div class="footer-item">
                     <div class="footer-logo">
                         <a href="#">
-                            <img src="assets/img/logo.png" alt="Logo">
+                            <img src="{% static 'assets/img/logo.png' %}" alt="Logo">
                         </a>
                         <p>Our Squad of Attorneys are always here to provide you the best and efficient service. Still, if you want to know more about us and our firm, you can connect with us</p>
                         <ul>

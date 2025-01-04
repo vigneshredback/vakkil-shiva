@@ -37,8 +37,10 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
 <body>
-    {% block content %} {% endblock %}
 
+    {% block content %} {% endblock %}
+    
+    <!-- End Page Content -->
 
     <!-- Footer -->
     {% include 'inc/footer.html' %}
@@ -68,5 +70,6 @@
     <script src="{% static 'assets/js/wow.min.js' %}"></script>
     <!-- Custom JS -->
     <!-- <script src="{% static 'assets/js/custom.js' %}"></script> -->
+
 </body>
 </html>

@@ -19,9 +19,26 @@
         </div> {% endcomment %}
         <!-- End Preloader -->
 
-        <!-- Navbar -->
-        {% include 'inc/navbar.html' %}
-        <!-- End Navbar -->
+<!-- Navbar -->
+{% include 'inc/navbar.html' %}
+<!-- End Navbar -->
+
+<div id="disclaimer-popup" class="popup">
+        <div class="popup-content">
+        <h2>Disclaimer</h2>
+        <p>
+            As per the rules of the Bar Council of India, we are not permitted to solicit work or advertise for our services. The user acknowledges the following:
+            There has been no advertisement, personal communication, solicitation, invitation or inducement of any kind whatsoever from us or any of our members to solicit any work through this website.
+            The user wishes to gain more information about us for his/her own information and use.
+            The information about us is provided to the user only on his/her specific request and any information obtained or materials downloaded from this website is completely at the user’s volition and any transmission, receipt or use of this site would not create any lawyer-client relationship.
+        </p>
+        <button id="agree-btn" class="agree-button">I Agree</button>
+        </div>
+    </div>
+    <div id="main-content" style="display: none;">
+     
+  </div>
+ 
 
         <!-- Banner -->
         <div class="banner-area banner-img-one">
@@ -43,7 +60,7 @@
                             <div class="col-lg-6">
                                 <div class="banner-item">
                                     <div class="banner-right">
-                                        <img class="banner-animation" src="assets/img/home-one/3.png" alt="Banner">
+                                        <img class="banner-animation" src="{% static 'assets/img/home-one/3.png' %}" alt="Banner">
                                     </div>
                                 </div>
                             </div>
@@ -60,7 +77,7 @@
                         <li>
                             <span>100% Legal</span>
                             <p>Govt Approved</p>
-                            <img src="assets/img/home-one/9.png" alt="Shape">
+                            <img src="{% static 'assets/img/home-one/9.png' %}" alt="Shape">
                         </li>
                     </ul>
                 </div>
@@ -74,7 +91,7 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-6">
                         <div class="help-item help-left">
-                            <img src="assets/img/home-one/5.jpg" alt="Help">
+                            <img src="{% static 'assets/img/home-one/5.jpg' %}" alt="Help">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -107,7 +124,7 @@
                                     </ul>
                                 </div>
                                 <div class="help-signature">
-                                    <img src="assets/img/home-one/4.png" alt="Signature">
+                                    <img src="{% static 'assets/img/home-one/4.png' %}" alt="Signature">
                                 </div>
                                 <a class="cmn-btn" href="practice.html">Learn More</a>
                             </div>
@@ -115,7 +132,7 @@
                     </div>
                 </div>
                 <div class="help-shape">
-                    <img src="assets/img/home-one/6.png" alt="Shape">
+                    <img src="{% static 'assets/img/home-one/6.png' %}" alt="Shape">
                 </div>
             </div>
         </div>
@@ -137,8 +154,8 @@
                             <h3>Civil Law</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam, expedita excepturi adipisci</p>
                             <a href="practice-details.html">Read More</a>
-                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
-                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
+                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">
@@ -149,8 +166,8 @@
                             <h3>Family Law</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam, expedita excepturi adipisci</p>
                             <a href="practice-details.html">Read More</a>
-                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
-                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
+                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">
@@ -161,8 +178,8 @@
                             <h3>Business Law</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam, expedita excepturi adipisci</p>
                             <a href="practice-details.html">Read More</a>
-                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
-                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
+                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">
@@ -173,8 +190,8 @@
                             <h3>Education Law</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam, expedita excepturi adipisci</p>
                             <a href="practice-details.html">Read More</a>
-                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
-                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
+                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">
@@ -185,8 +202,8 @@
                             <h3>Criminal Law</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam, expedita excepturi adipisci</p>
                             <a href="practice-details.html">Read More</a>
-                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
-                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
+                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">
@@ -197,8 +214,8 @@
                             <h3>Cyber Law</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam, expedita excepturi adipisci</p>
                             <a href="practice-details.html">Read More</a>
-                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
-                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
+                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
                         </div>
                     </div>
                 </div>
@@ -220,7 +237,7 @@
                                 <li class="animate__animated animate__fadeInUp" animate__delay=".3s">
                                     <div class="expertise-icon">
                                         <i class="flaticon-experience"></i>
-                                        <img src="assets/img/home-one/11.png" alt="Shape">
+                                        <img src="{% static 'assets/img/home-one/11.png' %}" alt="Shape">
                                     </div>
                                     <h3>Experience</h3>
                                     <p>Squads of Lyzo are incredibly professional and understand the situation of their clients and encourage them until obtaining victory</p>
@@ -228,7 +245,7 @@
                                 <li class="animate__animated animate__fadeInUp" animate__delay=".4s">
                                     <div class="expertise-icon">
                                         <i class="flaticon-lawyer"></i>
-                                        <img src="assets/img/home-one/11.png" alt="Shape">
+                                        <img src="{% static 'assets/img/home-one/11.png' %}" alt="Shape">
                                     </div>
                                     <h3>Skilled Attorney</h3>
                                     <p>Our Attorneys are creative and skilled and it helps them to find a huge variety of solution to win</p>
@@ -236,7 +253,7 @@
                                 <li class="animate__animated animate__fadeInUp" animate__delay=".5s">
                                     <div class="expertise-icon">
                                         <i class="flaticon-balance"></i>
-                                        <img src="assets/img/home-one/11.png" alt="Shape">
+                                        <img src="{% static 'assets/img/home-one/11.png' %}" alt="Shape">
                                     </div>
                                     <h3>Legal Proces</h3>
                                     <p>We maintain all the legal documents and papers and start to reach our destination in a legal way</p>
@@ -246,7 +263,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="expertise-image">
-                            <img src="assets/img/home-one/10.png" alt="Expertise">
+                            <img src="{% static 'assets/img/home-one/10.png' %}" alt="Expertise">
                         </div>
                     </div>
                 </div>
@@ -264,7 +281,7 @@
                 <div class="row justify-content-center">
                     <div class="col-sm-6 col-lg-4">
                         <div class="portfolio-item">
-                            <img src="assets/img/home-one/portfolio/1.jpg" alt="Portfolio">
+                            <img src="{% static 'assets/img/home-one/portfolio/1.jpg' %}" alt="Portfolio">
                             <div class="portfolio-inner">
                                 <span>Crime</span>
                                 <h3>
@@ -276,7 +293,7 @@
                     </div>
                     <div class="col-sm-6 col-lg-4">
                         <div class="portfolio-item">
-                            <img src="assets/img/home-one/portfolio/2.jpg" alt="Portfolio">
+                            <img src="{% static 'assets/img/home-one/portfolio/2.jpg' %}" alt="Portfolio">
                             <div class="portfolio-inner">
                                 <span>Rights</span>
                                 <h3>
@@ -288,7 +305,7 @@
                     </div>
                     <div class="col-sm-6   col-lg-4">
                         <div class="portfolio-item">
-                            <img src="assets/img/home-one/portfolio/3.jpg" alt="Portfolio">
+                            <img src="{% static 'assets/img/home-one/portfolio/3.jpg' %}" alt="Portfolio">
                             <div class="portfolio-inner">
                                 <span>Finance</span>
                                 <h3>
@@ -316,7 +333,7 @@
                 <div class="row justify-content-center">
                     <div class="col-sm-6 col-lg-3">
                         <div class="team-item">
-                            <img src="assets/img/home-one/team/1.jpg" alt="Team">
+                            <img src="{% static 'assets/img/home-one/team/1.jpg' %}" alt="Team">
                             <div class="team-inner">
                                 <ul>
                                     <li>
@@ -349,7 +366,7 @@
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="team-item">
-                            <img src="assets/img/home-one/team/2.jpg" alt="Team">
+                            <img src="{% static 'assets/img/home-one/team/2.jpg' %}" alt="Team">
                             <div class="team-inner">
                                 <ul>
                                     <li>
@@ -382,7 +399,7 @@
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="team-item">
-                            <img src="assets/img/home-one/team/3.jpg" alt="Team">
+                            <img src="{% static 'assets/img/home-one/team/3.jpg' %}" alt="Team">
                             <div class="team-inner">
                                 <ul>
                                     <li>
@@ -415,7 +432,7 @@
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="team-item">
-                            <img src="assets/img/home-one/team/4.jpg" alt="Team">
+                            <img src="{% static 'assets/img/home-one/team/4.jpg' %}" alt="Team">
                             <div class="team-inner">
                                 <ul>
                                     <li>
@@ -461,7 +478,7 @@
                             <div class="location-item">
                                 <div class="location-icon">
                                     <i class="flaticon-pin"></i>
-                                    <img src="assets/img/home-one/12.png" alt="Shape">
+                                    <img src="{% static 'assets/img/home-one/12.png' %}" alt="Shape">
                                 </div>
                                 <h3>Location</h3>
                                 <ul>
@@ -475,7 +492,7 @@
                             <div class="location-item">
                                 <div class="location-icon">
                                     <i class="flaticon-email"></i>
-                                    <img src="assets/img/home-one/12.png" alt="Shape">
+                                    <img src="{% static 'assets/img/home-one/12.png' %}" alt="Shape">
                                 </div>
                                 <h3>Email</h3>
                                 <ul>
@@ -493,7 +510,7 @@
                             <div class="location-item">
                                 <div class="location-icon">
                                     <i class="flaticon-call"></i>
-                                    <img src="assets/img/home-one/12.png" alt="Shape">
+                                    <img src="{% static 'assets/img/home-one/12.png' %}" alt="Shape">
                                 </div>
                                 <h3>Phone</h3>
                                 <ul>
@@ -573,7 +590,7 @@
                 <div class="blog-slider owl-theme owl-carousel">
                     <div class="blog-item">
                         <a href="blog-details.html">
-                            <img src="assets/img/home-one/blog/1.jpg" alt="Blog">
+                            <img src="{% static 'assets/img/home-one/blog/1.jpg' %}" alt="Blog">
                         </a>
                         <div class="blog-inner">
                             <span>Rights Case</span>
@@ -599,7 +616,7 @@
                     </div>
                     <div class="blog-item">
                         <a href="blog-details.html">
-                            <img src="assets/img/home-one/blog/2.jpg" alt="Blog">
+                            <img src="{% static 'assets/img/home-one/blog/2.jpg' %}" alt="Blog">
                         </a>
                         <div class="blog-inner">
                             <span>Business Case</span>
@@ -625,7 +642,7 @@
                     </div>
                     <div class="blog-item">
                         <a href="blog-details.html">
-                            <img src="assets/img/home-one/blog/3.jpg" alt="Blog">
+                            <img src="{% static 'assets/img/home-one/blog/3.jpg' %}" alt="Blog">
                         </a>
                         <div class="blog-inner">
                             <span>Criminal Case</span>
@@ -651,7 +668,7 @@
                     </div>
                     <div class="blog-item">
                         <a href="blog-details.html">
-                            <img src="assets/img/home-one/blog/1.jpg" alt="Blog">
+                            <img src="{% static 'assets/img/home-one/blog/1.jpg' %}" alt="Blog">
                         </a>
                         <div class="blog-inner">
                             <span>Rights Case</span>
@@ -677,7 +694,7 @@
                     </div>
                     <div class="blog-item">
                         <a href="blog-details.html">
-                            <img src="assets/img/home-one/blog/2.jpg" alt="Blog">
+                            <img src="{% static 'assets/img/home-one/blog/2.jpg' %}" alt="Blog">
                         </a>
                         <div class="blog-inner">
                             <span>Business Case</span>
@@ -703,7 +720,7 @@
                     </div>
                     <div class="blog-item">
                         <a href="blog-details.html">
-                            <img src="assets/img/home-one/blog/3.jpg" alt="Blog">
+                            <img src="{% static 'assets/img/home-one/blog/3.jpg' %}" alt="Blog">
                         </a>
                         <div class="blog-inner">
                             <span>Criminal Case</span>
@@ -729,7 +746,7 @@
                     </div>
                     <div class="blog-item">
                         <a href="blog-details.html">
-                            <img src="assets/img/home-one/blog/1.jpg" alt="Blog">
+                            <img src="{% static 'assets/img/home-one/blog/1.jpg' %}" alt="Blog">
                         </a>
                         <div class="blog-inner">
                             <span>Rights Case</span>
@@ -755,7 +772,7 @@
                     </div>
                     <div class="blog-item">
                         <a href="blog-details.html">
-                            <img src="assets/img/home-one/blog/2.jpg" alt="Blog">
+                            <img src="{% static 'assets/img/home-one/blog/2.jpg' %}" alt="Blog">
                         </a>
                         <div class="blog-inner">
                             <span>Business Case</span>
@@ -781,7 +798,7 @@
                     </div>
                     <div class="blog-item">
                         <a href="blog-details.html">
-                            <img src="assets/img/home-one/blog/3.jpg" alt="Blog">
+                            <img src="{% static 'assets/img/home-one/blog/3.jpg' %}" alt="Blog">
                         </a>
                         <div class="blog-inner">
                             <span>Criminal Case</span>
@@ -810,6 +827,26 @@
         </section>
         <!-- End Blog -->
 
-
-
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const popup = document.getElementById("disclaimer-popup");
+        const mainContent = document.getElementById("main-content");
+        const agreeBtn = document.getElementById("agree-btn");
+    
+        // Show popup if "agreed" is not in localStorage
+        if (!localStorage.getItem("disclaimerAgreed")) {
+        popup.style.display = "flex";
+        } else {
+        mainContent.style.display = "block";
+        }
+    
+        // Handle "I Agree" button click
+        agreeBtn.addEventListener("click", () => {
+        localStorage.setItem("disclaimerAgreed", "true");
+        popup.style.display = "none";
+        mainContent.style.display = "block";
+        });
+    });
+    </script>
 {% endblock content %} 
