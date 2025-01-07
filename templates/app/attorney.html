@@ -42,10 +42,68 @@
                 </div>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
+        <div class="container" >
+            <form method="post" class=" mb-5 d-flex justify-content-center align-items-center">
+                {% csrf_token %}
+                <div class=" mx-5">
+                 
+                    <select name="district" id="district" class="form-select bg-secondary text-white" required>
+                        <option value="">Select district</option>
+                        <option value="ariyalur">Ariyalur</option>
+                        <option value="chengalpattu">Chengalpattu</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="coimbatore">Coimbatore</option>
+                        <option value="cuddalore">Cuddalore</option>
+                        <option value="dharmapuri">Dharmapuri</option>
+                        <option value="dindigul">Dindigul</option>
+                        <option value="erode">Erode</option>
+                        <option value="kallakurichi">Kallakurichi</option>
+                        <option value="kanchipuram">Kanchipuram</option>
+                        <option value="kanyakumari">Kanyakumari</option>
+                        <option value="karur">Karur</option>
+                        <option value="krishnagiri">Krishnagiri</option>
+                        <option value="madurai">Madurai</option>
+                        <option value="mayiladuthurai">Mayiladuthurai</option>
+                        <option value="nagapattinam">Nagapattinam</option>
+                        <option value="namakkal">Namakkal</option>
+                        <option value="nilgiris">Nilgiris</option>
+                        <option value="perambalur">Perambalur</option>
+                        <option value="pudukottai">Pudukottai</option>
+                        <option value="ramanathapuram">Ramanathapuram</option>
+                        <option value="ranipet">Ranipet</option>
+                        <option value="salem">Salem</option>
+                        <option value="sivaganga">Sivaganga</option>
+                        <option value="tenkasi">Tenkasi</option>
+                        <option value="thanjavur">Thanjavur</option>
+                        <option value="theni">Theni</option>
+                        <option value="thoothukudi">Thoothukudi</option>
+                        <option value="tiruchirappalli">Tiruchirappalli</option>
+                        <option value="tirunelveli">Tirunelveli</option>
+                        <option value="tirupattur">Tirupattur</option>
+                        <option value="tiruppur">Tiruppur</option>
+                        <option value="tiruvallur">Tiruvallur</option>
+                        <option value="tiruvannamalai">Tiruvannamalai</option>
+                        <option value="tiruvarur">Tiruvarur</option>
+                        <option value="vellore">Vellore</option>
+                        <option value="viluppuram">Villupuram</option>
+                        <option value="virudhunagar">Virudhunagar</option>
+                    </select>
+                    
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+
         <!-- End Page Title -->
-        <h2 class="text-center mt-5">Team menbers in chennai</h2>
         <!-- Team -->
-        <section class="team-area team-area-two pt-100">
+        <section class="team-area team-area-two ">
+            {% if teams %}
+            <h2 class="text-center mt-5">Team members in {{selected_district}}</h2>
             <div class="container">
                 <div class="row justify-content-start">
                     {% for item in teams %}
@@ -93,90 +151,18 @@
                     {% endfor %}
                 </div>
             </div>
+            {% else %}
+            <p class='text-black text-center'>No attorneys found for {{selected_district}} </p>
+            {% endif %}
+      
         </section>
         <!-- End Team -->
 
 
-        <div class="container" >
-            <form method="post" class=" mb-5 d-flex justify-content-center align-items-center">
-                {% csrf_token %}
-                <div class=" mx-5">
-                 
-                    <select name="district" id="district" class="form-select bg-secondary text-white" required>
-                        <option value="">Select district</option>
-                        <option value="vellore">vellore</option>
-                        <option value="chennai">chennai</option>
-                    </select>
-                </div>
-                <div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-            </form>
-        </div>
 
-        <br>
-        <br>
-        <br>
-        <br>
 
         
 
-      {% if selected_team %}
-                <!-- Team -->
-                <section class="team-area team-area-two pt-25">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            {% for item in teams %}
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="team-item wow fadeInUp" data-wow-delay=".3s">
-                                    <img src="{{ item.image.url }}" alt="Team">
-                                    <div class="team-inner">
-                                        <ul>
-                                            {% if item.facebook %}
-                                            <li>
-                                                <a href="{{ item.facebook }}" target="_blank">
-                                                    <i class="icofont-facebook"></i>
-                                                </a>
-                                            </li>
-                                            {% endif %}
-                                            {% if item.instagram %}
-                                            <li>
-                                                <a href="{{ item.instagram }}" target="_blank">
-                                                    <i class="icofont-instagram"></i>
-                                                </a>
-                                            </li>
-                                            {% endif %}
-                                            {% if item.twitter %}
-                                            <li>
-                                                <a href="{{ item.twitter }}" target="_blank">
-                                                    <i class="icofont-twitter"></i>
-                                                </a>
-                                            </li>
-                                            {% endif %}
-                                            {% if item.linkedin %}
-                                            <li>
-                                                <a href="{{ item.linkedin }}" target="_blank">
-                                                    <i class="icofont-linkedin"></i>
-                                                </a>
-                                            </li>
-                                            {% endif %}
-                                        </ul>
-                                        <h3>
-                                            <a href="{% url 'attorney-details' item.id %}">{{ item.name }}</a>
-                                        </h3>
-                                        <span>{{item.consultant}}</span>
-                                    </div>
-                                </div>
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </section>
-                <!-- End Team -->
-      {% else %}
-      {% if request.method == 'POST' %}
-      <p class='text-black'>No attorneys found for {{selected_district}} </p>
-      {% endif %}
-      {% endif %}
+
 
 {% endblock content %} 

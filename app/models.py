@@ -12,9 +12,46 @@ CONSULTANTS_CHOICES = [
 ]
 
 DISTRICT_CHOICES = [
-    ('chennai', 'chennai'),
-    ('vellore', 'vellore'),
+    ('ariyalur', 'Ariyalur'),
+    ('chengalpattu', 'Chengalpattu'),
+    ('chennai', 'Chennai'),
+    ('coimbatore', 'Coimbatore'),
+    ('cuddalore', 'Cuddalore'),
+    ('dharmapuri', 'Dharmapuri'),
+    ('dindigul', 'Dindigul'),
+    ('erode', 'Erode'),
+    ('kallakurichi', 'Kallakurichi'),
+    ('kanchipuram', 'Kanchipuram'),
+    ('kanyakumari', 'Kanyakumari'),
+    ('karur', 'Karur'),
+    ('krishnagiri', 'Krishnagiri'),
+    ('madurai', 'Madurai'),
+    ('mayiladuthurai', 'Mayiladuthurai'),
+    ('nagapattinam', 'Nagapattinam'),
+    ('namakkal', 'Namakkal'),
+    ('nilgiris', 'Nilgiris'),
+    ('perambalur', 'Perambalur'),
+    ('pudukottai', 'Pudukottai'),
+    ('ramanathapuram', 'Ramanathapuram'),
+    ('ranipet', 'Ranipet'),
+    ('salem', 'Salem'),
+    ('sivaganga', 'Sivaganga'),
+    ('tenkasi', 'Tenkasi'),
+    ('thanjavur', 'Thanjavur'),
+    ('theni', 'Theni'),
+    ('thoothukudi', 'Thoothukudi'),
+    ('tiruchirappalli', 'Tiruchirappalli'),
+    ('tirunelveli', 'Tirunelveli'),
+    ('tirupattur', 'Tirupattur'),
+    ('tiruppur', 'Tiruppur'),
+    ('tiruvallur', 'Tiruvallur'),
+    ('tiruvannamalai', 'Tiruvannamalai'),
+    ('tiruvarur', 'Tiruvarur'),
+    ('vellore', 'Vellore'),
+    ('viluppuram', 'Villupuram'),
+    ('virudhunagar', 'Virudhunagar'),
 ]
+
 
 
 class TeamMembers(models.Model):
