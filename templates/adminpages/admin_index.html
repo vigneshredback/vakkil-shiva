@@ -1,0 +1,36 @@
+{% extends 'base/adminbase.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- Dashboard Layout -->
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+
+        {% include 'inc/admin_navbar.html' %}
+        <!-- Main Content -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-4">
+            <ul>
+            {% for item in teams %}
+            <li>{{ item.name }}</li>
+            <li>{{item.biography|safe}}</li>
+            <li>{{item.education|safe}}</li>
+            <li>{{item.working|safe}}</li>
+            <a href="{% url 'update-team-member' item.id %}">update</a>
+            <a href="{% url 'delete-team-member' item.id %}">delete</a>
+            {% endfor %}
+        </ul>
+     
+
+        </main>
+    </div>
+</div>
+
+
+
+{% endblock content %}
+
+{% block script %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+{% endblock script %}

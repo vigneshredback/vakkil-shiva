@@ -48,7 +48,7 @@
         <section class="team-area team-area-two pt-100">
             <div class="container">
                 <div class="row justify-content-start">
-                    {% for item in teammembers %}
+                    {% for item in teams %}
                     <div class="col-sm-6 col-lg-3">
                         <div class="team-item wow fadeInUp" data-wow-delay=".3s">
                             <img src="{{ item.image.url }}" alt="Team">
@@ -104,9 +104,8 @@
                  
                     <select name="district" id="district" class="form-select bg-secondary text-white" required>
                         <option value="">Select district</option>
-                        {% for item in districts %}
-                        <option value="{{ item.id }}">{{ item.name }}</option>
-                        {% endfor %}
+                        <option value="vellore">vellore</option>
+                        <option value="chennai">chennai</option>
                     </select>
                 </div>
                 <div>
@@ -127,7 +126,7 @@
                 <section class="team-area team-area-two pt-25">
                     <div class="container">
                         <div class="row justify-content-center">
-                            {% for item in selected_team %}
+                            {% for item in teams %}
                             <div class="col-sm-6 col-lg-3">
                                 <div class="team-item wow fadeInUp" data-wow-delay=".3s">
                                     <img src="{{ item.image.url }}" alt="Team">
