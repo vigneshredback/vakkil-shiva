@@ -30,7 +30,7 @@
     overflow-y: scroll;
   }
   .side-nav {
-    display: none;
+    /* display: none; */
   }
   /*-- End Navbar --*/
   /*-- Banner --*/

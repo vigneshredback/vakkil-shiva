@@ -4,33 +4,71 @@
 
 {% block content %}
 <!-- Dashboard Layout -->
-<div class="container-fluid">
+<div class="container-fluid mx-0">
     <div class="row">
         <!-- Sidebar -->
 
         {% include 'inc/admin_navbar.html' %}
         <!-- Main Content -->
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-4">
-
+        <main class="ms-sm-auto  px-4 mt-5">
+            <h2>Create new Attorney</h2>
             <form action="" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
+                {{form.name.label}}
                 {{form.name}}
+
+                {{form.district.label}}
                 {{form.district}}
-                {{form.img}}
+
+                {{form.image.label}}
+                {{form.image}}
+                <br>
+                <br>
+
+                {{form.consultant.label}}
                 {{form.consultant}}
+
+                {{form.facebook.label}}
                 {{form.facebook}}
+
+                {{form.twitter.label}}
                 {{form.twitter}}
+
+                {{form.instagram.label}}
                 {{form.instagram}}
+
+                {{form.linkedin.label}}
                 {{form.linkedin}}
+
+                {{form.email.label}}
                 {{form.email}}
+
+                {{form.mobile.label}}
                 {{form.mobile}}
                 <!-- Populating the data for textarea fields -->
-                <textarea name="biography" id="id_content" class="biography">{{ form.biography.value|default_if_none:'' }}</textarea>
-                <textarea name="research" id="id_content" class="research">{{ form.research.value|default_if_none:'' }}</textarea>
-                <textarea name="education" id="id_content" class="education">{{ form.education.value|default_if_none:'' }}</textarea>
-                <textarea name="working" id="id_content" class="working">{{ form.working.value|default_if_none:'' }}</textarea>
+                 <br>
+
+                 {{form.biography.label}}
+                <textarea  name="biography" id="id_content" class="biography" >{{ form.biography.value|default_if_none:'' }}</textarea>
+     
+                <br>
+                {{form.research.label}}
+                <textarea name="research" id="id_content" class="research ">{{ form.research.value|default_if_none:'' }}</textarea>
+               
+                <br>
+                {{form.education.label}}
+                <textarea name="education" id="id_content" class="education ">{{ form.education.value|default_if_none:'' }}</textarea>
+               
+                <br>
+                {{form.working.label}}
+                <textarea name="working" id="id_content" class="working ">{{ form.working.value|default_if_none:'' }}</textarea>
                 {{form.errors}}
-                <button type="submit">click</button>
+                <br>
+      
+                <button type="submit" class="btn btn-primary">click</button>
+                <br>
+                <br>
+                <br>
             </form>
 
         </main>

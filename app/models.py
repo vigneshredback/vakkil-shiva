@@ -6,9 +6,30 @@ from ckeditor.fields import RichTextField
     
 
 CONSULTANTS_CHOICES = [
-    ('draft', 'Draft'),
-    ('published', 'Published'),
-    ('archived', 'Archived'),
+    ('Admiralty and Maritime', 'Admiralty and Maritime'),
+    ('Antitrust & Competition', 'Antitrust & Competition'),
+    ('Compliance, Bribery & Anti-corruption', 'Compliance, Bribery & Anti-corruption'),
+    ('Corporate Insolvency & Restructuring', 'Corporate Insolvency & Restructuring'),
+    ('Employment & Industrial Relations', 'Employment & Industrial Relations'),
+    ('Foreign Investment & Exchange Control', 'Foreign Investment & Exchange Control'),
+    ('Joint Ventures, Foreign & Technical Collaborations', 'Joint Ventures, Foreign & Technical Collaborations'),
+    ('Oil & Gas, Energy and Infrastructure', 'Oil & Gas, Energy and Infrastructure'),
+    ('Project Finance', 'Project Finance'),
+    ('Regulatory Affairs', 'Regulatory Affairs'),
+    ('Technology, Media & Telecommunication', 'Technology, Media & Telecommunication'),
+    ('Aerospace and Defense', 'Aerospace and Defense'),
+    ('Banking & Finance', 'Banking & Finance'),
+    ('Corporate Commercial Advisory', 'Corporate Commercial Advisory'),
+    ('Dispute Resolution', 'Dispute Resolution'),
+    ('environment', 'Environment'),
+    ('Insurance & Reinsurance', 'Insurance & Reinsurance'),
+    ('Intellectual Property', 'Intellectual Property'),
+    ('Mergers & Acquisitions', 'Mergers & Acquisitions'),
+    ('Mining & Resources', 'Mining & Resources'),
+    ('Private Equity, Venture Capital & Funds', 'Private Equity, Venture Capital & Funds'),
+    ('Real Estate', 'Real Estate'),
+    ('Taxation', 'Taxation'),
+
 ]
 
 DISTRICT_CHOICES = [

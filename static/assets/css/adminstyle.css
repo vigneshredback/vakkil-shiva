@@ -1,0 +1,22 @@
+.nav-styling{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.heading{
+    font-size: 30px;
+    font-weight: bold;
+    color: red !important;
+}
+
+.nav-styling a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0px 0px 0px;
+ 
+}

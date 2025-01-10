@@ -5,24 +5,27 @@
 {% block content %}
 <!-- Dashboard Layout -->
 <div class="container-fluid">
-    <div class="row">
+    <div class="">
         <!-- Sidebar -->
 
         {% include 'inc/admin_navbar.html' %}
         <!-- Main Content -->
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-4">
-            <ul>
-            {% for item in teams %}
-            <li>{{ item.name }}</li>
-            <li>{{item.biography|safe}}</li>
-            <li>{{item.education|safe}}</li>
-            <li>{{item.working|safe}}</li>
-            <a href="{% url 'update-team-member' item.id %}">update</a>
-            <a href="{% url 'delete-team-member' item.id %}">delete</a>
-            {% endfor %}
-        </ul>
-     
-
+        <main class=" ms-sm-auto px-4">
+            <div class="row mt-5">
+                {% for item in teams %}
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="{{ item.image.url }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{ item.name }}</h5>
+                          <p class="card-text">{{ item.district }}</p>
+                          <a href="{% url 'update-team-member' item.id %}" class="btn btn-primary">Update</a>
+                          <a href="{% url 'delete-team-member' item.id %}" class="btn btn-danger">Delete</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </main>
     </div>
 </div>

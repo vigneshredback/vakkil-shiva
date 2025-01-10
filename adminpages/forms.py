@@ -18,6 +18,19 @@ class CustomteamMembersForm(forms.ModelForm):
         #     'working': forms.Textarea(attrs={'rows': 4, 'class': 'cke'}),
         # }
 
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-control mb-3'}),
+            # 'image': forms.FileInput(attrs={'class': 'form-control mb-3'}),
+            'district': forms.Select(attrs={'class': 'form-control mb-3'}),
+            'consultant': forms.Select(attrs={'class': 'form-control mb-3'}),
+            'facebook': forms.TextInput(attrs={'class': 'form-control mb-3'}),
+            'twitter': forms.TextInput(attrs={'class': 'form-control mb-3'}),
+            'instagram': forms.TextInput(attrs={'class': 'form-control mb-3'}),
+            'linkedin': forms.TextInput(attrs={'class': 'form-control mb-3'}),
+            'mobile': forms.TextInput(attrs={'class': 'form-control mb-3'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control mb-3'}),
+        }
+
 
 
 
