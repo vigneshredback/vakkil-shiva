@@ -48,6 +48,12 @@
                                 <li class="nav-item">
                                     <a href="{% url 'attorney' %}" class="nav-link ">Attorneys</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'practice' %}" class="nav-link ">Practice</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'contact' %}" class="nav-link ">Contact</a>
+                                </li>
                                 {% comment %} <li class="nav-item">
                                     <a href="#" class="nav-link dropdown-toggle">Case Studies</a>
                                     <ul class="dropdown-menu">
@@ -99,10 +105,11 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">Contact</a>
-                                </li> {% endcomment %}
+                                {% endcomment %}
                             </ul>
+                            <div class="side-nav">
+                                <a href="tel:123456789" class="call-now">Call Now</a>
+                            </div>
                         </div>
                     </nav>
                 </div>
