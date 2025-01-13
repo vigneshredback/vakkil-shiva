@@ -735,10 +735,10 @@ button:focus {
 }
 
 .expertise-image {
-  text-align: center;
+  text-align: s;
   position: relative;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 23px;
 }
 .expertise-image:before {
   position: absolute;
@@ -750,8 +750,6 @@ button:focus {
   left: 0;
   top: 0;
   z-index: -1;
-  border: 10px solid #b69d74;
-  background-color: #373535;
 }
 .expertise-image img {
   position: relative;

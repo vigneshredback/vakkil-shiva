@@ -202,11 +202,12 @@
     font-size: 14px;
   }
   .expertise-image {
-    padding-top: 50px;
+    padding-top: 20px;
   }
-  .expertise-image:before {
+  /* .expertise-image:before {
     border: 5px solid #b69d74;
-  }
+  } */
+
   /*-- End Expertise --*/
   /*-- Portfolio --*/
   .portfolio-area .text-center {

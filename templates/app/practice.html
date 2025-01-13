@@ -48,79 +48,51 @@
         <section class="practice-area practice-area-three pt-100">
             <div class="container">
                 <div class="row justify-content-center">
+                    {% for practice in page_obj %}
                     <div class="col-sm-6 col-lg-4">
                         <div class="practice-item">
                             <div class="practice-icon">
-                                <i class="flaticon-law"></i>
+                                <i class="{{ practice.icon }}"></i>
                             </div>
-                            <h3>Civil Law</h3>
-                            <p>Our attorneys are highly trained and skilled in the Civil Law sector  to provide the top service</p>
-                            <a href="{% url 'practice-civil-law' %}">Read More</a>
-                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
-                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
+                            <h3>{{ practice.name }}</h3>
+                            <p>{{ practice.desc }}</p>
+                            <a href="{% url practice.url %}">Read More</a>
+                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
+                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="practice-item">
-                            <div class="practice-icon">
-                                <i class="flaticon-family"></i>
-                            </div>
-                            <h3>Family Law</h3>
-                            <p>Attorney of Our Squad is tremendously skillful to acquire a positive outcome and honest</p>
-                            <a href="{% url "practice-family-law" %}">Read More</a>
-                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
-                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="practice-item">
-                            <div class="practice-icon">
-                                <i class="flaticon-inheritance"></i>
-                            </div>
-                            <h3>Business Law</h3>
-                            <p>You don’t need to worry about your business law till our Master’s Attorneys are here to help you</p>
-                            <a href="practice-details.html">Read More</a>
-                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
-                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="practice-item">
-                            <div class="practice-icon">
-                                <i class="flaticon-mortarboard"></i>
-                            </div>
-                            <h3>Education Law</h3>
-                            <p>Need Attorneys for Educational law?. Then, here our Talented & Professionals Attorneys ready to serve you</p>
-                            <a href="practice-details.html">Read More</a>
-                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
-                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="practice-item">
-                            <div class="practice-icon">
-                                <i class="flaticon-auction"></i>
-                            </div>
-                            <h3>Criminal Law</h3>
-                            <p>We provide the Pre-Eminent Attorneys to solve the tough Criminal cases to help you</p>
-                            <a href="{% url 'practice-criminal-law' %}">Read More</a>
-                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
-                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="practice-item">
-                            <div class="practice-icon">
-                                <i class="flaticon-vulnerability"></i>
-                            </div>
-                            <h3>Cyber Law</h3>
-                            <p>We proffer cyber specialists attorneys who are brilliant in determining these types of cases</p>
-                            <a href="practice-details.html">Read More</a>
-                            <img class="practice-shape-one" src="assets/img/home-one/7.png" alt="Shape">
-                            <img class="practice-shape-two" src="assets/img/home-one/8.png" alt="Shape">
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
+                
+                <!-- Pagination Controls -->
+                <div class="pagination">
+                    <nav>
+                        <ul class="pagination justify-content-center">
+                            {% if page_obj.has_previous %}
+                            <li class="page-item">
+                                <a class="page-link" href="?page=1">First</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+                            </li>
+                            {% endif %}
+                
+                            <li class="page-item disabled">
+                                <span class="page-link">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+                            </li>
+                
+                            {% if page_obj.has_next %}
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+                            </li>
+                            {% endif %}
+                        </ul>
+                    </nav>
+                </div>
+                
             </div>
         </section>
         <!-- End Practice -->
