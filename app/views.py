@@ -37,10 +37,10 @@ def practice(request):
     practices = [
         {"name": "Civil Law", "icon": "flaticon-law", "desc": "Our attorneys are highly trained and skilled in the Civil Law sector to provide the top service", "url": "practice-civil-law"},
         {"name": "Family Law", "icon": "flaticon-family", "desc": "Attorney of Our Squad is tremendously skillful to acquire a positive outcome and honest", "url": "practice-family-law"},
-        {"name": "Business Law", "icon": "flaticon-inheritance", "desc": "You don’t need to worry about your business law till our Master’s Attorneys are here to help you", "url": "practice-civil-law"},
-        {"name": "Education Law", "icon": "flaticon-mortarboard", "desc": "Need Attorneys for Educational law? Then, here our Talented & Professionals Attorneys ready to serve you", "url": "practice-civil-law"},
+        {"name": "Business Law", "icon": "flaticon-inheritance", "desc": "You don’t need to worry about your business law till our Master’s Attorneys are here to help you", "url": "practice-business-law"},
+        {"name": "Education Law", "icon": "flaticon-mortarboard", "desc": "Need Attorneys for Educational law? Then, here our Talented & Professionals Attorneys ready to serve you", "url": "practice-education-law"},
         {"name": "Criminal Law", "icon": "flaticon-auction", "desc": "We provide the Pre-Eminent Attorneys to solve the tough Criminal cases to help you", "url": "practice-criminal-law"},
-        {"name": "Cyber Law", "icon": "flaticon-vulnerability", "desc": "We proffer cyber specialists attorneys who are brilliant in determining these types of cases", "url": "practice-civil-law"},
+        {"name": "Cyber Law", "icon": "flaticon-vulnerability", "desc": "We proffer cyber specialists attorneys who are brilliant in determining these types of cases", "url": "practice-cyber-law"},
         
         # Add more practices as needed
 
@@ -222,62 +222,63 @@ def practice_civil_law(request):
     return render(request, 'app/practice/practice-civil-law.html')
 def practice_family_law(request):
     return render(request, 'app/practice/practice-family-law.html')
+def practice_business_law(request):
+    return render(request, 'app/practice/practice-business-law.html')
+def practice_education_law(request):
+    return render(request, 'app/practice/practice-education-law.html')
+def practice_cyber_law(request):
+    return render(request, 'app/practice/practice-cyber-law.html')
 def practice_admiralty_maritime_law(request):
     return render(request, 'app/practice/practice-admiralty-maritime.html')
 def practice_Antitrust_Competition_law(request):
     return render(request, 'app/practice/practice-Antitrust-Competition.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
-def practice_admiralty_maritime_law(request):
-    return render(request, 'app/practice/practice-admiralty-maritime.html')
+def practice_compliance_bribery_law(request):
+    return render(request, 'app/practice/practice-compliance-bribery.html')
+def practice_corporate_insolvency_law(request):
+    return render(request, 'app/practice/practice-corporate-insolvency.html')
+def practice_employment_relations_law(request):
+    return render(request, 'app/practice/practice-employment-relations.html')
+def practice_foreign_investment_law(request):
+    return render(request, 'app/practice/practice-foreign-investment.html')
+def practice_joint_ventures_law(request):
+    return render(request, 'app/practice/practice-joint-ventures.html')
+def practice_oil_gas_law(request):
+    return render(request, 'app/practice/practice-oil-gas.html')
+def practice_project_finance_law(request):
+    return render(request, 'app/practice/practice-project-finance.html')
+def practice_regulatory_affairs_law(request):
+    return render(request, 'app/practice/practice-regulatory-affairs.html')
+def practice_tech_media_law(request):
+    return render(request, 'app/practice/practice-tech-media.html')
+def practice_aerospace_defense_law(request):
+    return render(request, 'app/practice/practice-aerospace-defense.html')
+def practice_banking_finance_law(request):
+    return render(request, 'app/practice/practice-banking-finance.html')
+def practice_corporate_advisory_law(request):
+    return render(request, 'app/practice/practice-corporate-advisory.html')
+def practice_dispute_resolution_law(request):
+    return render(request, 'app/practice/practice-dispute-resolution.html')
+def practice_environment_law(request):
+    return render(request, 'app/practice/practice-environment.html')
+def practice_insurance_law(request):
+    return render(request, 'app/practice/practice-insurance.html')
+def practice_intellectual_property_law(request):
+    return render(request, 'app/practice/practice-intellectual-property.html')
+def practice_mergers_acquisitions_law(request):
+    return render(request, 'app/practice/practice-mergers-acquisitions.html')
+def practice_mining_resources_law(request):
+    return render(request, 'app/practice/practice-mining-resources.html')
+def practice_private_equity_law(request):
+    return render(request, 'app/practice/practice-private-equity.html')
+# def practice_real_estate_law(request):
+#     return render(request, 'app/practice/practice-admiralty-maritime.html')
+def practice_real_estate_law(request):
+    return render(request, 'app/practice/practice-real-estate.html')
+def practice_taxation_law(request):
+    return render(request, 'app/practice/practice-taxation.html')
+
+
+
+
+
 
