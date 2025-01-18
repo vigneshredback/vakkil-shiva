@@ -53,15 +53,12 @@
                                 <div class="section-title text-left">
                                     <h2>Oil & Gas, Energy and Infrastructure</h2>
                                 </div>
-                                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. . Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                <ul>
-                                    <li><span>Retribution –</span> Criminals ought to Be Punished in some way.</li>
-                                    <li><span>Deterrence –</span> Individual deterrence is aimed toward the specific offender.</li>
-                                    <li><span>Incapacitation – </span> Designed simply to keep criminals away from society.</li>
-                                    <li><span>Rehabilitation –</span> Aims at transforming an offender into a valuable member of society.</li>
-                                </ul>
-                                <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. . Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                <!-- Oil & Gas, Energy and Infrastructure -->
+                                    <p>The energy sector powers the world, and our legal expertise ensures smooth operations in oil, gas, and infrastructure projects. From compliance to dispute resolution, we address all challenges effectively. These projects often overlap with <a href="{% url "practice-environment" %}" style="color:#c89f4f;">environment law</a> and <a href="{% url "practice-corporate-insolvency" %}" style="color:#c89f4f;">corporate law</a>, and we manage these intersections seamlessly.</p>
+                                    <p>We assist in drafting contracts, managing negotiations, and ensuring regulatory compliance. Energy projects frequently involve <a href="{% url "practice-project-finance" %}" style="color:#c89f4f;">project finance</a> and <a href="{% url "practice-foreign-investment" %}" style="color:#c89f4f;">foreign investment</a>, and we provide end-to-end legal support for their success.</p>
+                                    <p>From renewable energy initiatives to large-scale infrastructure development, our tailored solutions address unique sector challenges. We integrate aspects of <a href="{% url "practice-employment-relations" %}" style="color:#c89f4f;">employment law</a> and <a href="{% url "practice-taxation" %}" style="color:#c89f4f;">taxation</a> for comprehensive project management.</p>
+                                    <p>Ensuring smooth operations across borders, we help navigate the complexities of international energy laws. These efforts often intersect with <a href="{% url "practice-regulatory-affairs" %}" style="color:#c89f4f;">regulatory affairs</a> and <a href="{% url "practice-intellectual-property" %}" style="color:#c89f4f;">intellectual property law</a>, ensuring your assets are protected globally.</p>
+                                    <p>Our commitment to the energy sector combines technical knowledge with legal expertise, delivering results-driven strategies. We often incorporate insights from <a href="{% url "practice-real-estate" %}" style="color:#c89f4f;">real estate law</a> and <a href="{% url "practice-compliance-bribery" %}" style="color:#c89f4f;">compliance law</a> for sustainable and efficient solutions.</p>
                             </div>
                         </div>
 
@@ -134,7 +131,7 @@
 
                                 </ul>
                             </div>
-                            <div class="practice-details-contact">
+                            {% comment %} <div class="practice-details-contact">
                                 <h3>Contact Info</h3>
                                 <ul>
                                     <li>
@@ -155,13 +152,13 @@
                                 <h3>Brochures</h3>
                                 <p>Risus is commodo viverra maecenas accumsan lacus vel facilisis. . Quis is a ipsum suspendisse ultrices gravida</p>
                                 <a class="cmn-btn" href="#"><i class="flaticon-download"></i>Download</a>
-                            </div>
+                            </div> {% endcomment %}
                         </div>
                     </div>
                 </div>
             </div>
             <div class="help-shape">
-                <img src="assets/img/home-one/6.png" alt="Shape">
+                <img src="{% static 'assets/img/home-one/6.png' %}" alt="Shape">
             </div>
         </div>
         <!-- End Practice Details -->

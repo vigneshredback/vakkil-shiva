@@ -53,15 +53,12 @@
                                 <div class="section-title text-left">
                                     <h2>Regulatory Affairs</h2>
                                 </div>
-                                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. . Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                <ul>
-                                    <li><span>Retribution –</span> Criminals ought to Be Punished in some way.</li>
-                                    <li><span>Deterrence –</span> Individual deterrence is aimed toward the specific offender.</li>
-                                    <li><span>Incapacitation – </span> Designed simply to keep criminals away from society.</li>
-                                    <li><span>Rehabilitation –</span> Aims at transforming an offender into a valuable member of society.</li>
-                                </ul>
-                                <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. . Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                <!-- Regulatory Affairs -->
+                                    <p>Regulatory affairs ensure businesses operate within the framework of laws and standards. Our team specializes in navigating complex regulations, enabling compliance and mitigating risks. Regulatory matters often overlap with <a href="{% url "practice-corporate-insolvency" %}" style="color:#c89f4f;">corporate law</a> and <a href="{% url "practice-environment" %}" style="color:#c89f4f;">environment law</a>, and we provide seamless support to address these challenges.</p>
+                                    <p>We assist in obtaining licenses, approvals, and certifications critical to your operations. Our expertise extends to managing issues in <a href="{% url "practice-taxation" %}" style="color:#c89f4f;">taxation</a> and <a href="{% url "practice-compliance-bribery" %}" style="color:#c89f4f;">compliance law</a>, ensuring your business adheres to all legal requirements.</p>
+                                    <p>From monitoring legislative changes to representing clients before regulatory bodies, we help businesses stay ahead. Regulatory affairs often intersect with <a href="{% url "practice-oil-gas" %}" style="color:#c89f4f;">energy law</a> and <a href="{% url "practice-project-finance" %}" style="color:#c89f4f;">project finance</a>, and we manage these intricacies effectively.</p>
+                                    <p>Whether dealing with local or international regulations, our tailored strategies ensure smooth operations. We often integrate solutions from <a href="{% url "practice-foreign-investment" %}" style="color:#c89f4f;">foreign investment</a> and <a href="{% url "practice-intellectual-property" %}" style="color:#c89f4f;">intellectual property law</a> to protect and enhance your business interests.</p>
+                                    <p>Partner with us for comprehensive regulatory support, combining industry knowledge with legal expertise. Our approach incorporates insights from <a href="{% url "practice-real-estate" %}" style="color:#c89f4f;">real estate law</a> and <a href="{% url "practice-employment-relations" %}" style="color:#c89f4f;">employment law</a> to address every aspect of compliance effectively.</p>
                             </div>
                         </div>
 
@@ -134,7 +131,7 @@
 
                                 </ul>
                             </div>
-                            <div class="practice-details-contact">
+                            {% comment %} <div class="practice-details-contact">
                                 <h3>Contact Info</h3>
                                 <ul>
                                     <li>
@@ -155,13 +152,13 @@
                                 <h3>Brochures</h3>
                                 <p>Risus is commodo viverra maecenas accumsan lacus vel facilisis. . Quis is a ipsum suspendisse ultrices gravida</p>
                                 <a class="cmn-btn" href="#"><i class="flaticon-download"></i>Download</a>
-                            </div>
+                            </div> {% endcomment %}
                         </div>
                     </div>
                 </div>
             </div>
             <div class="help-shape">
-                <img src="assets/img/home-one/6.png" alt="Shape">
+                <img src="{% static 'assets/img/home-one/6.png' %}" alt="Shape">
             </div>
         </div>
         <!-- End Practice Details -->

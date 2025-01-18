@@ -53,15 +53,12 @@
                                 <div class="section-title text-left">
                                     <h2>Mergers & Acquisitions</h2>
                                 </div>
-                                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. . Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                <ul>
-                                    <li><span>Retribution –</span> Criminals ought to Be Punished in some way.</li>
-                                    <li><span>Deterrence –</span> Individual deterrence is aimed toward the specific offender.</li>
-                                    <li><span>Incapacitation – </span> Designed simply to keep criminals away from society.</li>
-                                    <li><span>Rehabilitation –</span> Aims at transforming an offender into a valuable member of society.</li>
-                                </ul>
-                                <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. . Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                <!-- Mergers & Acquisitions -->
+                                    <p>Mergers and acquisitions (M&A) drive business growth, market expansion, and operational synergies. Our team provides tailored strategies to achieve successful transactions.</p>
+                                    <p>We specialize in due diligence, identifying risks and opportunities that could impact your deal's success.</p>
+                                    <p>Our expertise includes regulatory compliance, ensuring that all transactions align with local and international legal requirements.</p>
+                                    <p>We collaborate with specialists in <a href="{% url "practice-corporate-insolvency" %}" style="color:#c89f4f;">corporate law</a> and <a href="{% url "practice-taxation" %}" style="color:#c89f4f;">taxation</a> to provide comprehensive solutions for every stage of the M&A process.</p>
+                                    <p>From planning to post-merger integration, we guide clients through every step, ensuring seamless transitions and value realization.</p>
                             </div>
                         </div>
 
@@ -133,7 +130,7 @@
 
                                 </ul>
                             </div>
-                            <div class="practice-details-contact">
+                            {% comment %} <div class="practice-details-contact">
                                 <h3>Contact Info</h3>
                                 <ul>
                                     <li>
@@ -154,13 +151,13 @@
                                 <h3>Brochures</h3>
                                 <p>Risus is commodo viverra maecenas accumsan lacus vel facilisis. . Quis is a ipsum suspendisse ultrices gravida</p>
                                 <a class="cmn-btn" href="#"><i class="flaticon-download"></i>Download</a>
-                            </div>
+                            </div> {% endcomment %}
                         </div>
                     </div>
                 </div>
             </div>
             <div class="help-shape">
-                <img src="assets/img/home-one/6.png" alt="Shape">
+                <img src="{% static 'assets/img/home-one/6.png' %}" alt="Shape">
             </div>
         </div>
         <!-- End Practice Details -->

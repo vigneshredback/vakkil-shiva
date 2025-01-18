@@ -53,15 +53,12 @@
                                 <div class="section-title text-left">
                                     <h2>Corporate Commercial Advisory</h2>
                                 </div>
-                                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. . Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                <ul>
-                                    <li><span>Retribution –</span> Criminals ought to Be Punished in some way.</li>
-                                    <li><span>Deterrence –</span> Individual deterrence is aimed toward the specific offender.</li>
-                                    <li><span>Incapacitation – </span> Designed simply to keep criminals away from society.</li>
-                                    <li><span>Rehabilitation –</span> Aims at transforming an offender into a valuable member of society.</li>
-                                </ul>
-                                <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. . Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                    <!-- Corporate Commercial Advisory -->
+                                    <p>Corporate commercial advisory ensures your business is structured and managed efficiently. Our team provides strategic counsel on corporate governance, compliance, and operational matters. These services often intertwine with <a href="{% url "practice-civil-law" %}" style="color:#c89f4f;">civil law</a> and <a href="{% url "practice-business-law" %}" style="color:#c89f4f;">business law</a>, ensuring seamless support for complex challenges.</p>
+                                    <p>We assist in drafting and reviewing contracts, managing risk, and guiding mergers and acquisitions. Our expertise extends to <a href="{% url "practice-taxation" %}" style="color:#c89f4f;">taxation</a> and <a href="{% url "practice-employment-relations" %}" style="color:#c89f4f;">employment law</a>, ensuring compliance and operational efficiency.</p>
+                                    <p>From startups to multinational corporations, our tailored solutions help businesses thrive. Matters involving <a href="{% url "practice-real-estate" %}" style="color:#c89f4f;">real estate law</a> and <a href="{% url "practice-intellectual-property" %}" style="color:#c89f4f;">intellectual property law</a> are managed with an integrated approach for holistic outcomes.</p>
+                                    <p>Our commercial advisory services extend to managing cross-border transactions and regulatory compliance. Often collaborating with <a href="{% url "practice-foreign-investment" %}" style="color:#c89f4f;">foreign investment</a> and <a href="#cyber-law" style="color:#c89f4f;">cyber law</a>, we help businesses navigate global markets effectively.</p>
+                                    <p>Trust us for reliable and strategic corporate advice that supports growth and sustainability. We incorporate insights from <a href="{% url "practice-environment" %}" style="color:#c89f4f;">environment law</a> and <a href="{% url "practice-project-finance" %}" style="color:#c89f4f;">project finance</a> to deliver comprehensive and results-oriented solutions.</p>
                             </div>
                         </div>
 
@@ -133,7 +130,7 @@
 
                                 </ul>
                             </div>
-                            <div class="practice-details-contact">
+                            {% comment %} <div class="practice-details-contact">
                                 <h3>Contact Info</h3>
                                 <ul>
                                     <li>
@@ -154,13 +151,13 @@
                                 <h3>Brochures</h3>
                                 <p>Risus is commodo viverra maecenas accumsan lacus vel facilisis. . Quis is a ipsum suspendisse ultrices gravida</p>
                                 <a class="cmn-btn" href="#"><i class="flaticon-download"></i>Download</a>
-                            </div>
+                            </div> {% endcomment %}
                         </div>
                     </div>
                 </div>
             </div>
             <div class="help-shape">
-                <img src="assets/img/home-one/6.png" alt="Shape">
+                <img src="{% static 'assets/img/home-one/6.png' %}" alt="Shape">
             </div>
         </div>
         <!-- End Practice Details -->

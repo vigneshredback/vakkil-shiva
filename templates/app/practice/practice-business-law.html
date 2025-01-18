@@ -54,16 +54,17 @@
                                     <h2>Business Law</h2>
                                 </div>
                                <!-- Business Law -->
-                               <p>Business law supports entrepreneurs and companies in navigating legal complexities with clarity. Whether drafting contracts or ensuring regulatory compliance, our services align with your goals. Many matters also involve <a href="#civil-law" style="color:#b69d74;">civil law</a> and <a href="#taxation" style="color:#b69d74;">taxation</a>, and we address them seamlessly.</p>
-                               <p>Our expertise spans mergers, acquisitions, and partnerships, creating opportunities while mitigating risks. We also safeguard intellectual assets through <a href="#intellectual-property" style="color:#b69d74;">intellectual property law</a> and ensure operational efficiency with support from <a href="#employment-law" style="color:#b69d74;">employment law</a>. Let us help you build a strong foundation for success.</p>
-                               <p>From small businesses to multinational corporations, our solutions are tailored to suit every client’s needs. Business operations often intersect with <a href="#real-estate" style="color:#b69d74;">real estate law</a> and <a href="#education-law" style="color:#b69d74;">education law</a>, and we provide integrated support for complex challenges.</p>
-                               <p>Resolving disputes through negotiation or litigation, we prioritize your interests at every step. When business matters overlap with <a href="#criminal-law" style="color:#b69d74;">criminal law</a> or <a href="#compliance-law" style="color:#b69d74;">compliance law</a>, our team ensures seamless solutions that protect your reputation and assets.</p>
-                               <p>Our commitment to empowering businesses includes proactive strategies and responsive solutions. Whether addressing cross-border issues or regulatory frameworks, we often incorporate <a href="#cyber-law" style="color:#b69d74;">cyber law</a> and <a href="#environment-law" style="color:#b69d74;">environment law</a> to ensure comprehensive support. Trust us to guide you towards sustainable growth.</p>
+                               <p>Business law supports entrepreneurs and companies in navigating legal complexities with clarity. Whether drafting contracts or ensuring regulatory compliance, our services align with your goals. Many matters also involve <a href="{% url "practice-civil-law" %}" style="color:#c89f4f;">civil law</a> and <a href="{% url "practice-taxation" %}" style="color:#c89f4f;">taxation</a>, and we address them seamlessly.</p>
+                               <p>Our expertise spans mergers, acquisitions, and partnerships, creating opportunities while mitigating risks. We also safeguard intellectual assets through <a href="{% url "practice-intellectual-property" %}" style="color:#c89f4f;">intellectual property law</a> and ensure operational efficiency with support from <a href="{% url "practice-employment-relations" %}" style="color:#c89f4f;">employment law</a>. Let us help you build a strong foundation for success.</p>
+                               <p>From small businesses to multinational corporations, our solutions are tailored to suit every client’s needs. Business operations often intersect with <a href="{% url "practice-real-estate" %}" style="color:#c89f4f;">real estate law</a> and <a href="{% url "practice-education-law" %}" style="color:#c89f4f;">education law</a>, and we provide integrated support for complex challenges.</p>
+                               <p>Resolving disputes through negotiation or litigation, we prioritize your interests at every step. When business matters overlap with <a href="{% url "practice-criminal-law" %}" style="color:#c89f4f;">criminal law</a> or <a href="{% url "practice-compliance-bribery" %}" style="color:#c89f4f;">compliance law</a>, our team ensures seamless solutions that protect your reputation and assets.</p>
+                               <p>Our commitment to empowering businesses includes proactive strategies and responsive solutions. Whether addressing cross-border issues or regulatory frameworks, we often incorporate <a href="{% url "practice-cyber-law" %}" style="color:#c89f4f;">cyber law</a> and <a href="{% url "practice-employment-relations" %}" style="color:#c89f4f;">environment law</a> to ensure comprehensive support. Trust us to guide you towards sustainable growth.</p>
                             </div>
                         </div>
 
                     </div>
                     <div class="col-lg-4">
+                     <div class="practice-details-item">
                         <div class="blog-details-category">
                             <ul>
 
@@ -130,11 +131,34 @@
 
                             </ul>
                         </div>
+                       {% comment %} <div class="practice-details-contact">
+                                <h3>Contact Info</h3>
+                                <ul>
+                                    <li>
+                                        <i class="flaticon-call"></i>
+                                        <a href="tel:+07554332322">Call : +07 554 332 322</a>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-email"></i>
+                                        <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#b8d0ddd4d4d7f8d4c1c2d796dbd7d5"><span class="__cf_email__" data-cfemail="3c54595050537c50454653125f5351">[email&#160;protected]</span></a>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-pin"></i>
+                                        4th Floor, 408 No Chamber
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="practice-details-brochures">
+                                <h3>Brochures</h3>
+                                <p>Risus is commodo viverra maecenas accumsan lacus vel facilisis. . Quis is a ipsum suspendisse ultrices gravida</p>
+                                <a class="cmn-btn" href="#"><i class="flaticon-download"></i>Download</a>
+                            </div> {% endcomment %}
+                        </div>  
                     </div>
                 </div>
             </div>
             <div class="help-shape">
-                <img src="assets/img/home-one/6.png" alt="Shape">
+                <img src="{% static 'assets/img/home-one/6.png' %}" alt="Shape">
             </div>
         </div>
         <!-- End Practice Details -->

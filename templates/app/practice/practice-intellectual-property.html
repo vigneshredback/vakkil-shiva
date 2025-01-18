@@ -53,15 +53,12 @@
                                 <div class="section-title text-left">
                                     <h2>Intellectual Property</h2>
                                 </div>
-                                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. . Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                <ul>
-                                    <li><span>Retribution –</span> Criminals ought to Be Punished in some way.</li>
-                                    <li><span>Deterrence –</span> Individual deterrence is aimed toward the specific offender.</li>
-                                    <li><span>Incapacitation – </span> Designed simply to keep criminals away from society.</li>
-                                    <li><span>Rehabilitation –</span> Aims at transforming an offender into a valuable member of society.</li>
-                                </ul>
-                                <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. . Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                              <!-- Intellectual Property -->
+                                <p>Intellectual property law safeguards creativity and innovation, ensuring your ideas are protected and monetized. Our team specializes in trademarks, copyrights, patents, and trade secrets. These matters often intersect with <a href="{% url "practice-business-law" %}" style="color#c89f4f;">business law</a> and <a href="{% url "practice-cyber-law" %}" style="color#c89f4f;">cyber law</a>, providing comprehensive protection for your assets.</p>
+                                <p>We assist clients in registering and enforcing intellectual property rights, offering expert guidance on compliance and litigation. Collaborating with <a href="{% url "practice-regulatory-affairs" %}" style="color#c89f4f;">regulatory affairs</a> and <a href="{% url "practice-taxation" %}" style="color#c89f4f;">taxation</a>, we ensure your interests are safeguarded across jurisdictions.</p>
+                                <p>Our expertise includes managing licensing agreements, addressing infringement issues, and handling disputes. Intellectual property matters often overlap with <a href="{% url "practice-corporate-insolvency" %}" style="color#c89f4f;">corporate law</a> and <a href="{% url "practice-banking-finance" %}" style="color#c89f4f;">dispute resolution</a>, and we provide seamless solutions tailored to your needs.</p>
+                                <p>From startups to established enterprises, our strategies help you leverage your intellectual assets effectively. We also integrate insights from <a href="{% url "practice-employment-relations" %}" style="color#c89f4f;">employment law</a> and <a href="{% url "practice-environment" %}" style="color#c89f4f;">environment law</a> to address emerging challenges in innovation and sustainability.</p>
+                                <p>Protect and enhance your intellectual property with our comprehensive legal services. Trust us to provide reliable and forward-thinking solutions that empower your creative and business goals.</p>
                             </div>
                         </div>
 
@@ -133,7 +130,7 @@
 
                                 </ul>
                             </div>
-                            <div class="practice-details-contact">
+                            {% comment %} <div class="practice-details-contact">
                                 <h3>Contact Info</h3>
                                 <ul>
                                     <li>
@@ -154,13 +151,13 @@
                                 <h3>Brochures</h3>
                                 <p>Risus is commodo viverra maecenas accumsan lacus vel facilisis. . Quis is a ipsum suspendisse ultrices gravida</p>
                                 <a class="cmn-btn" href="#"><i class="flaticon-download"></i>Download</a>
-                            </div>
+                            </div> {% endcomment %}
                         </div>
                     </div>
                 </div>
             </div>
             <div class="help-shape">
-                <img src="assets/img/home-one/6.png" alt="Shape">
+                <img src="{% static 'assets/img/home-one/6.png' %}" alt="Shape">
             </div>
         </div>
         <!-- End Practice Details -->

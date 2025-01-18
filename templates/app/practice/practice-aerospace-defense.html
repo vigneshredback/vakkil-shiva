@@ -53,15 +53,12 @@
                                 <div class="section-title text-left">
                                     <h2>Aerospace and Defense</h2>
                                 </div>
-                                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. . Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                                <ul>
-                                    <li><span>Retribution –</span> Criminals ought to Be Punished in some way.</li>
-                                    <li><span>Deterrence –</span> Individual deterrence is aimed toward the specific offender.</li>
-                                    <li><span>Incapacitation – </span> Designed simply to keep criminals away from society.</li>
-                                    <li><span>Rehabilitation –</span> Aims at transforming an offender into a valuable member of society.</li>
-                                </ul>
-                                <p>Risus commodo viverra maecenas accumsan lacus vel facilisis. . Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                                    <!-- Aerospace and Defense -->
+                                    <p>The aerospace and defense sector operates within stringent regulations and high stakes. Our legal expertise ensures compliance and operational efficiency in this critical industry. These matters often overlap with <a href="{% url "practice-regulatory-affairs" %}" style="color:#c89f4f;">regulatory affairs</a> and <a href="{% url "practice-project-finance" %}" style="color:#c89f4f;">project finance</a>, and we provide tailored solutions to navigate these complexities.</p>
+                                    <p>We assist clients in handling defense contracts, procurement, and regulatory approvals. Our support extends to <a href="{% url "practice-foreign-investment" %}" style="color:#c89f4f;">foreign investment</a> and <a href="{% url "practice-corporate-advisory" %}" style="color:#c89f4f;">corporate law</a>, ensuring seamless management of cross-border operations.</p>
+                                    <p>From navigating export controls to protecting intellectual property, we deliver comprehensive legal solutions. These matters frequently intersect with <a href="{% url "practice-cyber-law" %}" style="color:#c89f4f;">cyber law</a> and <a href="{% url "practice-intellectual-property" %}" style="color:#c89f4f;">intellectual property law</a>, and we address all aspects with precision.</p>
+                                    <p>Our team supports innovation and expansion by integrating insights from <a href="{% url "practice-real-estate" %}" style="color:#c89f4f;">real estate law</a> and <a href="#environment-law" style="color:#c89f4f;">environment law</a>, ensuring sustainable growth. Trust us to protect your interests in this competitive and regulated space.</p>
+                                    <p>Partner with us for end-to-end legal solutions that drive success in the aerospace and defense sector. We often incorporate strategies from <a href="{% url "practice-employment-relations" %}" style="color:#c89f4f;">employment law</a> and <a href="{% url "practice-taxation" %}" style="color:#c89f4f;">taxation</a> to provide holistic support for your business operations.</p>
                             </div>
                         </div>
 
@@ -133,7 +130,7 @@
 
                                 </ul>
                             </div>
-                            <div class="practice-details-contact">
+                            {% comment %} <div class="practice-details-contact">
                                 <h3>Contact Info</h3>
                                 <ul>
                                     <li>
@@ -154,13 +151,13 @@
                                 <h3>Brochures</h3>
                                 <p>Risus is commodo viverra maecenas accumsan lacus vel facilisis. . Quis is a ipsum suspendisse ultrices gravida</p>
                                 <a class="cmn-btn" href="#"><i class="flaticon-download"></i>Download</a>
-                            </div>
+                            </div> {% endcomment %}
                         </div>
                     </div>
                 </div>
             </div>
             <div class="help-shape">
-                <img src="assets/img/home-one/6.png" alt="Shape">
+                <img src="{% static 'assets/img/home-one/6.png' %}" alt="Shape">
             </div>
         </div>
         <!-- End Practice Details -->

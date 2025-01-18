@@ -53,17 +53,18 @@
                                 <div class="section-title text-left">
                                     <h2>Family Law</h2>
                                 </div>
-                               <!-- Family Law -->
-                                    <p>Family law is deeply personal, addressing sensitive issues such as divorce, child custody, and adoption. Our compassionate team offers clear guidance and support, ensuring your family’s needs are prioritized. We often coordinate with <a href="#civil-law" style="color:#b69d74;">civil law</a> and <a href="#real-estate" style="color:#b69d74;">real estate law</a> for holistic solutions.</p>
-                                    <p>We handle cases with care, advocating for fair resolutions that respect everyone involved. Our expertise also extends to safeguarding related interests, such as <a href="#taxation" style="color:#b69d74;">taxation</a> and <a href="#employment-law" style="color:#b69d74;">employment law</a>. Let us help you navigate these challenging times with confidence.</p>
-                                    <p>Our child-focused approach ensures custody and support agreements prioritize your children’s welfare. Family issues often intersect with <a href="#education-law" style="color:#b69d74;">education law</a> and <a href="#criminal-law" style="color:#b69d74;">criminal law</a>, and we address these complexities to secure the best outcomes for your family.</p>
-                                    <p>Resolving disputes through mediation or litigation, we aim for amicable solutions that reduce stress and conflict. When family matters touch on <a href="#corporate-law" style="color:#b69d74;">corporate law</a> or <a href="#intellectual-property" style="color:#b69d74;">intellectual property law</a>, we ensure no detail is overlooked. Trust us to guide you through with care and expertise.</p>
-                                    <p>From prenuptial agreements to elder care, family law encompasses a wide spectrum of needs. Our integrated approach incorporates aspects of <a href="#business-law" style="color:#b69d74;">business law</a> and <a href="#compliance-law" style="color:#b69d74;">compliance law</a> to protect your family’s future comprehensively. Partner with us for reliable support every step of the way.</p>
+                                <!-- Family Law -->
+                                    <p>Family law is deeply personal, addressing sensitive issues such as divorce, child custody, and adoption. Our compassionate team offers clear guidance and support, ensuring your family’s needs are prioritized. We often coordinate with <a href="{% url "practice-civil-law" %}" style="color:#c89f4f;">civil law</a> and <a href="{% url "practice-real-estate" %}" style="color:#c89f4f;">real estate law</a> for holistic solutions.</p>
+                                    <p>We handle cases with care, advocating for fair resolutions that respect everyone involved. Our expertise also extends to safeguarding related interests, such as <a href="{% url "practice-taxation" %}" style="color:#c89f4f;">taxation</a> and <a href="{% url "practice-employment-relations" %}" style="color:#c89f4f;">employment law</a>. Let us help you navigate these challenging times with confidence.</p>
+                                    <p>Our child-focused approach ensures custody and support agreements prioritize your children’s welfare. Family issues often intersect with <a href="{% url "practice-education-law" %}" style="color:#c89f4f;">education law</a> and <a href="{% url "practice-criminal-law" %}" style="color:#c89f4f;">criminal law</a>, and we address these complexities to secure the best outcomes for your family.</p>
+                                    <p>Resolving disputes through mediation or litigation, we aim for amicable solutions that reduce stress and conflict. When family matters touch on <a href="{% url "practice-corporate-insolvency" %}" style="color:#c89f4f;">corporate law</a> or <a href="{% url "practice-intellectual-property" %}" style="color:#c89f4f;">intellectual property law</a>, we ensure no detail is overlooked. Trust us to guide you through with care and expertise.</p>
+                                    <p>From prenuptial agreements to elder care, family law encompasses a wide spectrum of needs. Our integrated approach incorporates aspects of <a href="{% url "practice-business-law" %}" style="color:#c89f4f;">business law</a> and <a href="{% url "practice-employment-relations" %}" style="color:#c89f4f;">compliance law</a> to protect your family’s future comprehensively. Partner with us for reliable support every step of the way.</p>
                             </div>
                         </div>
 
                     </div>
-                    <div class="col-lg-4">
+                <div class="col-lg-4">
+                    <div class="practice-details-item">
                         <div class="blog-details-category">
                             <ul>
 
@@ -130,13 +131,34 @@
 
                             </ul>
                         </div>
-                        
+                        {% comment %} <div class="practice-details-contact">
+                                <h3>Contact Info</h3>
+                                <ul>
+                                    <li>
+                                        <i class="flaticon-call"></i>
+                                        <a href="tel:+07554332322">Call : +07 554 332 322</a>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-email"></i>
+                                        <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#b8d0ddd4d4d7f8d4c1c2d796dbd7d5"><span class="__cf_email__" data-cfemail="3c54595050537c50454653125f5351">[email&#160;protected]</span></a>
+                                    </li>
+                                    <li>
+                                        <i class="flaticon-pin"></i>
+                                        4th Floor, 408 No Chamber
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="practice-details-brochures">
+                                <h3>Brochures</h3>
+                                <p>Risus is commodo viverra maecenas accumsan lacus vel facilisis. . Quis is a ipsum suspendisse ultrices gravida</p>
+                                <a class="cmn-btn" href="#"><i class="flaticon-download"></i>Download</a>
+                            </div> {% endcomment %}
+                        </div>  
+                    </div>   
                     </div>
                 </div>
-            </div>
-            
             <div class="help-shape">
-                <img src="assets/img/home-one/6.png" alt="Shape">
+                <img src="{% static 'assets/img/home-one/6.png' %}" alt="Shape">
             </div>
         </div>
         <!-- End Practice Details -->
