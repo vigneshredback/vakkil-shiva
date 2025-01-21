@@ -98,7 +98,7 @@
                         <div class="help-item">
                             <div class="help-right">
                                 <h2>We Provide Qualified Attorneys For Your Assistance </h2>
-                                <p>The Whole Team of Lyzo Law Firm brings a strong and fearless attitude to all the clients they assist. And, to make sure that you win, our team will provide you with High-quality service.</p>
+                                <p>The Whole Team of Vakkil Shiva Law Firm brings a strong and fearless attitude to all the clients they assist. And, to make sure that you win, our team will provide you with High-quality service.</p>
                                 <div class="help-inner-left">
                                     <ul>
                                         <li>
@@ -124,9 +124,9 @@
                                     </ul>
                                 </div>
                                 <div class="help-signature">
-                                    <img src="{% static 'assets/img/home-one/4.png' %}" alt="Signature">
+                                    {% comment %} <img src="{% static 'assets/img/home-one/4.png' %}" alt="Signature"> {% endcomment %}
                                 </div>
-                                <a class="cmn-btn" href="practice.html">Learn More</a>
+                                <a class="cmn-btn mt-5" href="{% url "practice" %}">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -152,8 +152,8 @@
                                 <i class="flaticon-law"></i>
                             </div>
                             <h3>Civil Law</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam, expedita excepturi adipisci</p>
-                            <a href="practice-details.html">Read More</a>
+                            <p>Our attorneys are highly trained and skilled in the Civil Law sector to provide the top service</p>
+                            <a href="{% url "practice-civil-law" %}">Read More</a>
                             <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
                             <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
                         </div>
@@ -164,8 +164,8 @@
                                 <i class="flaticon-family"></i>
                             </div>
                             <h3>Family Law</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam, expedita excepturi adipisci</p>
-                            <a href="practice-details.html">Read More</a>
+                            <p>Attorney of Our Squad is tremendously skillful to acquire a positive outcome and honest</p>
+                            <a href="{% url "practice-family-law" %}">Read More</a>
                             <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
                             <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
                         </div>
@@ -176,8 +176,8 @@
                                 <i class="flaticon-inheritance"></i>
                             </div>
                             <h3>Business Law</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam, expedita excepturi adipisci</p>
-                            <a href="practice-details.html">Read More</a>
+                            <p>You don’t need to worry about your business law till our Master’s Attorneys are here to help you</p>
+                            <a href="{% url "practice-business-law" %}">Read More</a>
                             <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
                             <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
                         </div>
@@ -188,8 +188,8 @@
                                 <i class="flaticon-mortarboard"></i>
                             </div>
                             <h3>Education Law</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam, expedita excepturi adipisci</p>
-                            <a href="practice-details.html">Read More</a>
+                            <p>Need Attorneys for Educational law? Then, here our Talented & Professionals Attorneys ready to serve you</p>
+                            <a href="{% url "practice-education-law" %}">Read More</a>
                             <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
                             <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
                         </div>
@@ -200,8 +200,8 @@
                                 <i class="flaticon-auction"></i>
                             </div>
                             <h3>Criminal Law</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam, expedita excepturi adipisci</p>
-                            <a href="practice-details.html">Read More</a>
+                            <p>We provide the Pre-Eminent Attorneys to solve the tough Criminal cases to help you</p>
+                            <a href="{% url "practice-criminal-law" %}">Read More</a>
                             <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
                             <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
                         </div>
@@ -212,8 +212,8 @@
                                 <i class="flaticon-vulnerability"></i>
                             </div>
                             <h3>Cyber Law</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quisquam, expedita excepturi adipisci</p>
-                            <a href="practice-details.html">Read More</a>
+                            <p>We proffer cyber specialists attorneys who are brilliant in determining these types of cases</p>
+                            <a href="{% url "practice-cyber-law" %}">Read More</a>
                             <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
                             <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
                         </div>
@@ -240,7 +240,7 @@
                                         <img src="{% static 'assets/img/home-one/11.png' %}" alt="Shape">
                                     </div>
                                     <h3>Experience</h3>
-                                    <p>Squads of Lyzo are incredibly professional and understand the situation of their clients and encourage them until obtaining victory</p>
+                                    <p>Squads of Vakkil Shiva are incredibly professional and understand the situation of their clients and encourage them until obtaining victory</p>
                                 </li>
                                 <li class="animate__animated animate__fadeInUp" animate__delay=".4s">
                                     <div class="expertise-icon">
@@ -482,9 +482,9 @@
                                 </div>
                                 <h3>Location</h3>
                                 <ul>
-                                    <li>2108-267 Road Quadra,Toronto, Victiria Canada</li>
+                                    <li> 18c, First Floor ,Albert theatre road, Opposite to Egmore Railway Station ,Chennai-600008</li>
                                 </ul>
-                                <a class="location-link" href="https://www.google.com/maps" target="_blank">View on gogle map</a>
+                                <a class="location-link" href="https://www.google.com/maps/place/13%C2%B004'39.8%22N+80%C2%B015'49.1%22E/@13.0777151,80.2610719,898m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d13.0777151!4d80.2636468?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">View on gogle map</a>
                             </div>
                         </div>
 
@@ -497,13 +497,11 @@
                                 <h3>Email</h3>
                                 <ul>
                                     <li>
-                                        <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#fb939e979794bb97828194d5989496"><span class="__cf_email__" data-cfemail="09616c6565664965707366276a6664">[email&#160;protected]</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#60090e060f200c191a0f4e030f0d"><span class="__cf_email__" data-cfemail="8de4e3ebe2cde1f4f7e2a3eee2e0">[email&#160;protected]</span></a>
+                                        {% comment %} <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#fb939e979794bb97828194d5989496"><span class="__cf_email__" data-cfemail="09616c6565664965707366276a6664">[vakkilshiva@gmail.com]</span></a> {% endcomment %}
+                                        <a href="mailto:vakkilshiva@gmail.com">vakkilshiva@gmail.com</a>
+
                                     </li>
                                 </ul>
-                                <a class="location-link" href="https://www.google.com/maps" target="_blank">View on gogle map</a>
                             </div>
                         </div>
                         <div class="col-sm-6   col-lg-4">
@@ -515,13 +513,10 @@
                                 <h3>Phone</h3>
                                 <ul>
                                     <li>
-                                        <a href="tel:+0755543332322">+07 5554 3332 322</a>
+                                        <a href="tel:+0755543332322">+ 91760 44406</a>
                                     </li>
-                                    <li>
-                                        <a href="tel:+0555962435736">+05 5596 2435 736</a>
-                                    </li>
+                                   
                                 </ul>
-                                <a class="location-link" href="https://www.google.com/maps" target="_blank">View on gogle map</a>
                             </div>
                         </div>
                     </div>
@@ -530,7 +525,8 @@
             <!-- End Location -->
 
             <div class="container-fluid">
-                <form id="contactForm">
+                <form id="indexContactForm" method="post" action="{% url 'index_contact' %}">
+                    {% csrf_token %}
                     <div class="row contact-wrap">
                         <div class="col-sm-6 col-lg-6">
                             <div class="form-group">

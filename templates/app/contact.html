@@ -58,7 +58,7 @@
                                 </div>
                                 <h3>Location</h3>
                                 <ul>
-                                    <li>2108-267 Road Quadra,Toronto, Victiria Canada</li>
+                                    <li> 18c, First Floor ,Albert theatre road, Opposite to Egmore Railway Station ,Chennai-600008</li>
                                 </ul>
                             </div>
                         </div>
@@ -70,11 +70,9 @@
                                 <h3>Phone</h3>
                                 <ul>
                                     <li>
-                                        <a href="tel:+0755543332322">+07 5554 3332 322</a>
+                                        <a href="tel:+0755543332322">+ 91760 44406</a>
                                     </li>
-                                    <li>
-                                        <a href="tel:+0555962435736">+05 5596 2435 736</a>
-                                    </li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -86,11 +84,10 @@
                                 <h3>Email</h3>
                                 <ul>
                                     <li>
-                                        <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#fa929f969695ba96838095d4999597"><span class="__cf_email__" data-cfemail="0b636e6767644b6772716425686466">[email&#160;protected]</span></a>
+                                        {% comment %} <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#fa929f969695ba96838095d4999597"><span class="__cf_email__" data-cfemail="0b636e6767644b6772716425686466">[email&#160;protected]</span></a> {% endcomment %}
+                                        <a href="mailto:vakkilshiva@gmail.com">vakkilshiva@gmail.com</a>
                                     </li>
-                                    <li>
-                                        <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#b4dddad2dbf4d8cdcedb9ad7dbd9"><span class="__cf_email__" data-cfemail="1b72757d745b7762617435787476">[email&#160;protected]</span></a>
-                                    </li>
+                                   
                                 </ul>
                             </div>
                         </div>
@@ -100,7 +97,8 @@
             <!-- End Location -->
 
             <div class="container-fluid">
-                <form id="contactForm">
+                <form id="contactForm" method="post">
+                    {% csrf_token %}
                     <div class="row contact-wrap">
                         <div class="col-sm-6 col-lg-6">
                             <div class="form-group">
@@ -162,14 +160,14 @@
                             <div class="clearfix"></div>
                         </div>
                     </div>
-                </form>
+                </form> 
             </div>
         </div>
         <!-- End Contact Form -->
 
         <!-- Start Map Area -->
 		<div class="map-area">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1587550284019!5m2!1sen!2sbd"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3911.6401566799586!2d80.2636389!3d13.0777222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDA0JzM5LjgiTiA4MMKwMTUnNDkuMSJF!5e1!3m2!1sen!2sin!4v1737366989557!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 		<!-- End Map Area -->
 {% endblock content %} 

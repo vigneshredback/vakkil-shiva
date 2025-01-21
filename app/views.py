@@ -279,6 +279,84 @@ def practice_taxation_law(request):
 
 
 
+# views.py
 
+# from django.core.mail import send_mail
+# from django.shortcuts import render, redirect
+# from django.contrib import messages
+
+# def contact(request):
+#     if request.method == 'POST':
+#         name = request.POST.get('name')
+#         email = request.POST.get('email')
+#         phone_number = request.POST.get('phone_number')
+#         msg_subject = request.POST.get('msg_subject')
+#         message = request.POST.get('message')
+
+#         # Construct the email content
+#         email_subject = f"New Contact Form Submission: {name}"
+#         email_message = f"Name: {name}\nEmail: {email}\nPhone: {phone_number}\nSubject: {msg_subject}\nMessage:\n{message}"
+
+#         try:
+#             send_mail(email_subject, email_message, email, ['giridharanredbackit@gmail.com'])
+#             messages.success(request, 'Your message has been sent successfully!')
+#         except Exception as e:
+#             messages.error(request, f'An error occurred: {e}')
+
+#         return redirect('contact')
+
+#     return render(request, 'app/contact.html')
+
+
+
+# views.py
+
+from django.core.mail import send_mail
+from django.shortcuts import render, redirect
+from django.contrib import messages
+
+def contact(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        phone_number = request.POST.get('phone_number')
+        msg_subject = request.POST.get('msg_subject')
+        message = request.POST.get('message')
+
+        # Construct the email content
+        email_subject = f"New Contact Form Submission: {name}"
+        email_message = f"Name: {name}\nEmail: {email}\nPhone: {phone_number}\nSubject: {msg_subject}\nMessage:\n{message}"
+
+        try:
+            send_mail(email_subject, email_message, email, ['giridharanredbackit@gmail.com'])
+            messages.success(request, 'Your message has been sent successfully!')
+        except Exception as e:
+            messages.error(request, f'An error occurred: {e}')
+
+        return redirect('contact')
+
+    return render(request, 'app/contact.html')
+
+def index_contact(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        phone_number = request.POST.get('phone_number')
+        msg_subject = request.POST.get('msg_subject')
+        message = request.POST.get('message')
+
+        # Construct the email content
+        email_subject = f"New Contact Form Submission: {name}"
+        email_message = f"Name: {name}\nEmail: {email}\nPhone: {phone_number}\nSubject: {msg_subject}\nMessage:\n{message}"
+
+        try:
+            send_mail(email_subject, email_message, 'giridharanredbackit@gmail.com', ['giridharanredbackit@gmail.com'])
+            messages.success(request, 'Your message has been sent successfully!')
+        except Exception as e:
+            messages.error(request, f'An error occurred: {e}')
+
+        return redirect('index')
+
+    return render(request, 'app/index.html')
 
 

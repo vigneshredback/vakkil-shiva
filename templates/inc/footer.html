@@ -16,12 +16,12 @@
                 <div id="validator-newsletter" class="form-result"></div>
             </form>
         </div>
-    </div>
+    </div> 
     <!-- End Newsletter -->
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4 ">
                 <div class="footer-item">
                     <div class="footer-logo">
                         <a href="#">
@@ -59,31 +59,31 @@
                         <h3>Services</h3>
                         <ul>
                             <li>
-                                <a href="practice-details.html">
+                                <a href="{% url "practice-family-law" %}">
                                     <i class="icofont-simple-right"></i>
                                     Family Law
                                 </a>
                             </li>
                             <li>
-                                <a href="practice-details.html">
+                                <a href="{% url "practice-education-law" %}">
                                     <i class="icofont-simple-right"></i>
                                     Education Law
                                 </a>
                             </li>
                             <li>
-                                <a href="practice-details.html">
+                                <a href="{% url "practice-civil-law" %}">
                                     <i class="icofont-simple-right"></i>
                                     Civil Law
                                 </a>
                             </li>
                             <li>
-                                <a href="practice-details.html">
+                                <a href="{% url "practice-criminal-law" %}">
                                     <i class="icofont-simple-right"></i>
                                     Criminal Law
                                 </a>
                             </li>
                             <li>
-                                <a href="practice-details.html">
+                                <a href="{% url "practice-business-law" %}">
                                     <i class="icofont-simple-right"></i>
                                     Business Law
                                 </a>
@@ -98,13 +98,13 @@
                         <h3>Quick Links</h3>
                         <ul>
                             <li>
-                                <a href="index.html">
+                                <a href="{% url "index" %}">
                                     <i class="icofont-simple-right"></i>
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a href="about.html">
+                                <a href="{% url "about" %}">
                                     <i class="icofont-simple-right"></i>
                                     About Us
                                 </a>
@@ -116,15 +116,15 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="attorney.html">
+                                <a href="{% url "attorney" %}">
                                     <i class="icofont-simple-right"></i>
                                     Team
                                 </a>
                             </li>
                             <li>
-                                <a href="testimonial.html">
+                                <a href="{% url "contact" %}">
                                     <i class="icofont-simple-right"></i>
-                                    Testimonial
+                                   Contact 
                                 </a>
                             </li>
                         </ul>
@@ -136,9 +136,11 @@
                     <div class="footer-find">
                         <h3>Find Us</h3>
                         <ul>
+                            
                             <li>
                                 <i class="icofont-location-pin"></i>
                                 18c, First Floor ,Albert theatre road, Opposite to Egmore Railway Station ,Chennai-600008
+                                
                             </li>
                             <li>
                                 <i class="icofont-ui-call"></i>
@@ -146,7 +148,8 @@
                             </li>
                             <li>
                                 <i class="icofont-at"></i>
-                                <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#0e666b6262614e62777461206d6163"><span class="__cf_email__" data-cfemail="3a525f5656557a5643405514595557">vakkilshiva@gmail.com</span></a>
+                                {% comment %} <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#0e666b6262614e62777461206d6163"><span class="__cf_email__" data-cfemail="3a525f5656557a5643405514595557">vakkilshiva@gmail.com</span></a> {% endcomment %}
+                                <a href="mailto:vakkilshiva@gmail.com">vakkilshiva@gmail.com</a>
                             </li>
                         </ul>
                     </div>
@@ -157,7 +160,7 @@
             <div class="row justify-content-center">
                 <div class="col-sm-7 col-lg-6">
                     <div class="copyright-item">
-                        <p>© Lyzo is Proudly Owned by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
+                        {% comment %} <p>© Vakkil Shiva is Proudly Owned by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p> {% endcomment %}
                     </div>
                 </div>
                 <div class="col-sm-5 col-lg-6">

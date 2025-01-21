@@ -3287,6 +3287,52 @@ footer .copyright-area .copyright-right {
   color:white;
 }
 
+/* pagenation */
+
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination .page-item {
+  margin: 0 5px;
+  list-style: none;
+}
+
+.pagination .page-item .page-link {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  color:#c89f4f;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pagination .page-item .page-link:hover {
+  background-color:#c89f4f;
+  color: white;
+  border-color:#c89f4f;
+}
+
+.pagination .page-item.disabled .page-link {
+  background-color: #f1f1f1;
+  color: #999;
+  pointer-events: none;
+  border: 1px solid #ddd;
+}
+
+.pagination .page-item.active .page-link {
+  background-color:#c89f4f;
+  color: white;
+  border-color:#c89f4f;
+}
+
+
 /* Mobile responsive */
 @media (max-width: 600px) {
   .popup-content {
