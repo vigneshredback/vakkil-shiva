@@ -1,24 +1,25 @@
 from django.shortcuts import render, HttpResponse
-from app.models import TeamMembers
+from app.models import TeamMembers,Districts,Consultants
 from django.core.paginator import Paginator
 
 
 # Create your views here.
 def index(request):
-    team = TeamMembers.objects.filter(district='our attorneys')
+    team = TeamMembers.objects.filter(district_id=1)
     return render(request, 'app/index.html',{'teams':team})
 
 def about(request):
     return render(request, 'app/about.html')
 
 def attorney(request):
-    team = TeamMembers.objects.filter(district='our attorneys')
+    team = TeamMembers.objects.filter(district_id=1)
+    district = Districts.objects.all()
     if request.method == 'POST':
         selected_district = request.POST.get('district')
-        team = TeamMembers.objects.filter(district=selected_district)
-        return render(request, 'app/attorney.html',{'teams':team,'selected_district':selected_district})
+        team = TeamMembers.objects.filter(district=Districts.objects.get(name=selected_district).id)
+        return render(request, 'app/attorney.html',{'teams':team,'selected_district':selected_district,'districts':district})
     print("get request")
-    return render(request, 'app/attorney.html',{'teams':team,'selected_district':'chennai'})
+    return render(request, 'app/attorney.html',{'teams':team,'selected_district':'chennai','districts':district})
 
 def attorney_details(request,id):
     attorney = TeamMembers.objects.get(id=id)

@@ -52,44 +52,9 @@
                  
                     <select name="district" id="district" class="form-select bg-secondary text-white" required>
                         <option value="">Select district</option>
-                        <option value="ariyalur">Ariyalur</option>
-                        <option value="chengalpattu">Chengalpattu</option>
-                        <option value="chennai">Chennai</option>
-                        <option value="coimbatore">Coimbatore</option>
-                        <option value="cuddalore">Cuddalore</option>
-                        <option value="dharmapuri">Dharmapuri</option>
-                        <option value="dindigul">Dindigul</option>
-                        <option value="erode">Erode</option>
-                        <option value="kallakurichi">Kallakurichi</option>
-                        <option value="kanchipuram">Kanchipuram</option>
-                        <option value="kanyakumari">Kanyakumari</option>
-                        <option value="karur">Karur</option>
-                        <option value="krishnagiri">Krishnagiri</option>
-                        <option value="madurai">Madurai</option>
-                        <option value="mayiladuthurai">Mayiladuthurai</option>
-                        <option value="nagapattinam">Nagapattinam</option>
-                        <option value="namakkal">Namakkal</option>
-                        <option value="nilgiris">Nilgiris</option>
-                        <option value="perambalur">Perambalur</option>
-                        <option value="pudukottai">Pudukottai</option>
-                        <option value="ramanathapuram">Ramanathapuram</option>
-                        <option value="ranipet">Ranipet</option>
-                        <option value="salem">Salem</option>
-                        <option value="sivaganga">Sivaganga</option>
-                        <option value="tenkasi">Tenkasi</option>
-                        <option value="thanjavur">Thanjavur</option>
-                        <option value="theni">Theni</option>
-                        <option value="thoothukudi">Thoothukudi</option>
-                        <option value="tiruchirappalli">Tiruchirappalli</option>
-                        <option value="tirunelveli">Tirunelveli</option>
-                        <option value="tirupattur">Tirupattur</option>
-                        <option value="tiruppur">Tiruppur</option>
-                        <option value="tiruvallur">Tiruvallur</option>
-                        <option value="tiruvannamalai">Tiruvannamalai</option>
-                        <option value="tiruvarur">Tiruvarur</option>
-                        <option value="vellore">Vellore</option>
-                        <option value="viluppuram">Villupuram</option>
-                        <option value="virudhunagar">Virudhunagar</option>
+                        {% for district in districts %}
+                        <option value="{{ district.name }}">{{ district.name }}</option>
+                        {% endfor %}
                     </select>
                     
                 </div>

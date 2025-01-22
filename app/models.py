@@ -74,22 +74,34 @@ DISTRICT_CHOICES = [
     ('virudhunagar', 'Virudhunagar'),
 ]
 
+class Districts(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+    
+    class Meta:
+        verbose_name_plural = 'districts'
+        ordering = ['name']
+
+class Consultants(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+    
+    class Meta:
+        verbose_name_plural = 'consultants types'
+        ordering = ['name']
+
 
 
 class TeamMembers(models.Model):
     name = models.CharField(max_length=50)
     image = models.ImageField(upload_to='images/')
-    district = models.CharField(
-        max_length=100,
-        choices=DISTRICT_CHOICES,
-        default='chennai'
-    )
+    district = models.ForeignKey(Districts, on_delete=models.CASCADE)
     # image = models.ImageField()
-    consultant = models.CharField(
-        max_length=100,
-        choices=CONSULTANTS_CHOICES,
-        default='unknown'
-    )
+    consultant = models.ForeignKey(Consultants, on_delete=models.CASCADE)
     facebook = models.URLField(max_length=100,blank=True,null=True)
     twitter = models.URLField(max_length=100,blank=True,null=True)
     linkedin = models.URLField(max_length=100,blank=True,null=True)
