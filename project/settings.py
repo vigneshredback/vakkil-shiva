@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+oo%*=f5#^w86i&5dh71*1%)_qxtfzu=k-qb-^6t#cqo0b00ig
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vakkil.searchyourmatch.com']
 
 
 # Application definition
@@ -145,9 +145,9 @@ DEFAULT_FROM_EMAIL =  "giri <giridharanredbackit@gmail.com>"
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'static'),]
+STATICFILES_DIRS = [os.path.join(BASE_DIR,'mystatic'),]
 
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 MEDIA_URL = '/media/'
 
