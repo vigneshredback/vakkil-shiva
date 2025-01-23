@@ -50,7 +50,8 @@
                                 <div class="banner-item">
                                     <div class="banner-left">
                                         <h1>Your legal Solution Start Here!</h1>
-                                        <p>Decision Are A Professional Attorney & Lawyers Services Provider Institutions. Suitable For Law Firm, Injury Law, Traffic Ticket Attorney, Legacy And More.</p>
+                                        <p>At Decision, we provide exceptional attorney and legal services designed to address diverse legal needs, including law firm representation, civil law, business law, education law, and criminal law. Led by one of Chennai’s most trusted legal professionals, <spane style="color:#B69D74; font-weight: 600;">Vakkil Shiva</spane> , our team combines extensive expertise with a client-focused approach to deliver effective solutions for even the most complex legal challenges. Renowned for achieving outstanding results, we are committed to guiding clients through every step of their legal journey with professionalism and care.</p>
+                                        
                                         <a href="contact.html">FREE CONSULTATION 
                                             <i class="icofont-arrow-right"></i>
                                         </a>
@@ -97,8 +98,8 @@
                     <div class="col-lg-6">
                         <div class="help-item">
                             <div class="help-right">
-                                <h2>We Provide Qualified Attorneys For Your Assistance </h2>
-                                <p>The Whole Team of Vakkil Shiva Law Firm brings a strong and fearless attitude to all the clients they assist. And, to make sure that you win, our team will provide you with High-quality service.</p>
+                                <h2>We Provide Qualified Attorneys for Your Assistance</h2>
+                                <p>The dedicated team at Vakkil Shiva Law Firm specializes in offering expert legal solutions across various fields, including civil law, business law, education law, and Family law. With a fearless and results-driven approach, we are committed to delivering high-quality legal services to ensure our clients achieve successful outcomes in every case.</p>                                
                                 <div class="help-inner-left">
                                     <ul>
                                         <li>
@@ -156,6 +157,8 @@
                             <a href="{% url "practice-civil-law" %}">Read More</a>
                             <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
                             <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
+                            <br>
+                            <br>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">
@@ -164,10 +167,14 @@
                                 <i class="flaticon-family"></i>
                             </div>
                             <h3>Family Law</h3>
+                            
                             <p>Attorney of Our Squad is tremendously skillful to acquire a positive outcome and honest</p>
+                            
                             <a href="{% url "practice-family-law" %}">Read More</a>
                             <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
                             <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
+                            <br>
+                            <br>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">
@@ -204,6 +211,8 @@
                             <a href="{% url "practice-criminal-law" %}">Read More</a>
                             <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
                             <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
+                            <br>
+                            <br>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-4">
@@ -216,6 +225,8 @@
                             <a href="{% url "practice-cyber-law" %}">Read More</a>
                             <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
                             <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
+                            <br>
+                            <br>
                         </div>
                     </div>
                 </div>
@@ -240,23 +251,23 @@
                                         <img src="{% static 'assets/img/home-one/11.png' %}" alt="Shape">
                                     </div>
                                     <h3>Experience</h3>
-                                    <p>Squads of Vakkil Shiva are incredibly professional and understand the situation of their clients and encourage them until obtaining victory</p>
+                                    <p>Vakkil Shiva's team in Chennai is professional, understanding client needs, and committed to achieving success in every case.</p>
                                 </li>
                                 <li class="animate__animated animate__fadeInUp" animate__delay=".4s">
                                     <div class="expertise-icon">
                                         <i class="flaticon-lawyer"></i>
                                         <img src="{% static 'assets/img/home-one/11.png' %}" alt="Shape">
                                     </div>
-                                    <h3>Skilled Attorney</h3>
-                                    <p>Our Attorneys are creative and skilled and it helps them to find a huge variety of solution to win</p>
+                                    <h3>Skilled Attorneys</h3>
+                                    <p>Our skilled attorneys, led by Vakkil Shiva, create effective strategies to deliver the best results for clients in Chennai.</p
                                 </li>
                                 <li class="animate__animated animate__fadeInUp" animate__delay=".5s">
                                     <div class="expertise-icon">
                                         <i class="flaticon-balance"></i>
                                         <img src="{% static 'assets/img/home-one/11.png' %}" alt="Shape">
                                     </div>
-                                    <h3>Legal Proces</h3>
-                                    <p>We maintain all the legal documents and papers and start to reach our destination in a legal way</p>
+                                    <h3>Legal Process</h3>
+                                    <p>We handle all legal paperwork and ensure a smooth, lawful process to achieve justice at Vakkil Shiva Law Firm in Chennai.</p>
                                 </li>
                             </ul>
                        </div>
@@ -272,7 +283,7 @@
         <!-- End Expertise -->
 
         <!-- portfolio -->
-        <section class="portfolio-area ptb-100">
+        {% comment %} <section class="portfolio-area ptb-100">
             <div class="container">
                 <div class="section-title">
                     <span>PORTFOLIO</span>
@@ -316,15 +327,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center">
+                <div class="text-center mb-5">
                     <a class="cmn-btn" href="case-study.html">See More</a>
                 </div>
             </div>
-        </section>
+        </section> {% endcomment %}
         <!-- End portfolio -->
 
         <!-- Team -->
-        <section class="team-area">
+        {% comment %} <section class="team-area">
             <div class="container">
                 <div class="section-title">
                     <span>TEAM MEMBER</span>
@@ -465,11 +476,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> {% endcomment %}
         <!-- End Team -->
-
+        <!--  -->
         <!-- Contact Form -->
-        <div class="contact-form pb-100">
+        <div class="contact-form pb-100" style="margin-top: 200px;">
             <!-- Location -->
             <div class="loaction-area">
                 <div class="container">

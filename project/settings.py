@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+oo%*=f5#^w86i&5dh71*1%)_qxtfzu=k-qb-^6t#cqo0b00ig
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['vakkil.searchyourmatch.com']
+ALLOWED_HOSTS = ['vakkil.searchyourmatch.com','http://localhost:8000','127.0.0.1']
 
 
 # Application definition
@@ -75,6 +75,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'project.wsgi.application'
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://vakkil.searchyourmatch.com',  # Your production domain
+    'https://www.vakkil.searchyourmatch.com',  # Add subdomains if applicable
+    'http://localhost:8000',  # Optional: for local testing
+]
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
