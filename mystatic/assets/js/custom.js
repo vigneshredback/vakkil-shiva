@@ -43,30 +43,33 @@ jQuery(function ($) {
 	});
 
 	// Blog Slider JS
-	$('.blog-slider').owlCarousel({
-		loop:true,
-		margin: 0,
-		nav: false,
-		dots: true,
-		smartSpeed: 1000,
-		autoplay:true,
-		autoplayTimeout:3000,
-		autoplayHoverPause:true,
-		responsive:{
-			0:{
-				items:1,
+	$(document).ready(function () {
+		$('.blog-slider').owlCarousel({
+			loop: true,
+			margin: 0,
+			nav: false,
+			dots: true,
+			smartSpeed: 1000,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true,
+			responsive: {
+				0: {
+					items: 1,
+				},
+				600: {
+					items: 1,
+				},
+				800: {
+					items: 2,
+				},
+				1000: {
+					items: 3,
+				},
 			},
-			600:{
-				items:1,
-			},
-			800:{
-				items:2,
-			},
-			1000:{
-				items:3,
-			}
-		}
+		});
 	});
+	
 
 	// Wow JS
 	new WOW().init();

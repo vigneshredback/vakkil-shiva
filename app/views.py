@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from app.models import TeamMembers,Districts,Consultants
+from app.models import TeamMembers,Districts,Consultants,Blog
 from django.core.paginator import Paginator
 
 
@@ -29,6 +29,10 @@ def contact(request):
     return render(request, 'app/contact.html')
 # def practice(request):
 #     return render(request, 'app/practice.html')
+
+def index(request):
+    blogs = Blog.objects.all()
+    return render(request, 'app/index.html', {'blogs': blogs})
 
 from django.core.paginator import Paginator
 from django.shortcuts import render
@@ -196,7 +200,6 @@ def practice(request):
     page_obj = paginator.get_page(page_number)  # Get paginated items
 
     return render(request, 'app/practice.html', {'page_obj': page_obj})
-
 
 # def practice_detail(request, practice_slug):
 #     practices = [

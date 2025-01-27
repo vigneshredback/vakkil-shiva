@@ -95,6 +95,16 @@ class Consultants(models.Model):
         ordering = ['name']
 
 
+class Blog(models.Model):
+    blog_img = models.ImageField(upload_to='images/')
+    blog_category = models.ForeignKey(Consultants, on_delete=models.CASCADE)
+    blog_title = models.TextField()
+    blog_date = models.DateField()
+    blog_content = models.TextField()
+
+    def __str__(self):
+        return self.blog_title
+    
 
 class TeamMembers(models.Model):
     name = models.CharField(max_length=50)
