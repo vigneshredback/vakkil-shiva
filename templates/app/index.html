@@ -594,41 +594,7 @@
             <h2>Our Latest Blog</h2>   
         </div>
       
-        <section class="blog-area blog-area-three">
-            <div class="container">
-               
-                <div class="row justify-content-center">
-                    {% for blog in blogs %}
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="blog-item wow fadeInUp" data-wow-delay=".3s">
-                            <a href="blog-details.html">
-                                <img src="{{ blog.blog_img.url }}" alt="{{ blog.blog_title }}">
-                            </a>
-                            <div class="blog-inner">
-                                <span>{{ blog.blog_category }}</span>
-                                <h3>
-                                    <a href="blog-details.html">{{ blog.blog_title }}</a>
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <i class="icofont-calendar"></i>
-                                        {{ blog.blog_date }}
-                                    </li>
-                                </ul>
-                                <p>{{ blog.blog_content|truncatewords:20 }}</p>
-                                <a class="blog-link" href="blog-details.html">
-                                    Read More
-                                    <i class="icofont-simple-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-                    
-                </div>
-            </div>
-        </section>
+    
 </section>
 <!-- End Blog -->
     </div>

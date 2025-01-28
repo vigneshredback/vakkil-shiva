@@ -28,6 +28,9 @@
                           <li class="nav-item mt-3">
                             <a class="nav-link active" aria-current="page" href="{% url 'contact' %}">Contact</a>
                           </li>
+                          <li class="nav-item mt-3">
+                            <a class="nav-link active" aria-current="page" href="{% url 'blog' %}">Blog</a>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -44,20 +47,27 @@
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a href="{% url 'index' %}" class="nav-link  active">Home</a>
+                                    <a href="{% url 'index' %}" class="nav-link {% if request.path == '/' %}active{% endif %}">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{% url 'about' %}" class="nav-link">About</a>
+                                    <a href="{% url 'about' %}" class="nav-link {% if request.path == '/about/' %}active{% endif %}">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{% url 'attorney' %}" class="nav-link ">Attorneys</a>
+                                    <a href="{% url 'attorney' %}" class="nav-link {% if request.path == '/attorney/' %}active{% endif %}">Attorneys</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{% url 'practice' %}" class="nav-link ">Practice</a>
+                                    <a href="{% url 'practice' %}" class="nav-link {% if request.path == '/practice/' %}active{% endif %}">Practice</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{% url 'contact' %}" class="nav-link ">Contact</a>
+                                    <a href="{% url 'blog' %}" class="nav-link {% if request.path == '/blog/' %}active{% endif %}">Blog</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'contact' %}" class="nav-link {% if request.path == '/contact/' %}active{% endif %}">Contact</a>
+                                </li>
+                               
+                               
+                                
+                                
                                 {% comment %} <li class="nav-item">
                                     <a href="#" class="nav-link dropdown-toggle">Case Studies</a>
                                     <ul class="dropdown-menu">

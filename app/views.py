@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from app.models import TeamMembers,Districts,Consultants,Blog
 from django.core.paginator import Paginator
+from django.shortcuts import get_object_or_404, render
 
 
 # Create your views here.
@@ -30,9 +31,20 @@ def contact(request):
 # def practice(request):
 #     return render(request, 'app/practice.html')
 
-def index(request):
-    blogs = Blog.objects.all()
-    return render(request, 'app/index.html', {'blogs': blogs})
+def blog(request):
+    blogs_list = Blog.objects.all() 
+    paginator = Paginator(blogs_list, 6) 
+
+    page_number = request.GET.get('page')  
+    page_obj = paginator.get_page(page_number)  
+
+    return render(request, 'app/blog.html', {'page_obj': page_obj})
+
+def blog_details(request, id):
+    blog = get_object_or_404(Blog, id=id)
+    recent_blogs = Blog.objects.order_by('-blog_date')[:5]
+    return render(request, 'app/blog-details.html', {'blog': blog, 'recent_blogs': recent_blogs})
+
 
 from django.core.paginator import Paginator
 from django.shortcuts import render

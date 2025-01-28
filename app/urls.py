@@ -40,4 +40,6 @@ urlpatterns = [
     path('practice-real-estate/', views.practice_real_estate_law, name='practice-real-estate'),
     path('practice-taxation/', views.practice_taxation_law, name='practice-taxation'),
     path('attorney-details/<int:id>', views.attorney_details, name='attorney-details'),
+    path('blog/', views.blog, name='blog'),
+    path('blog-details/<int:id>/', views.blog_details, name='blog-details'),
 ]

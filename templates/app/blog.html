@@ -1,173 +1,18 @@
-<!DOCTYPE html>
-<html lang="zxx">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %} {% endblock %}
+{% block meta %} {% endblock %}
+{% block content %} 
 
-       <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!-- Meanmenu CSS -->
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
-        <!-- Icofont CSS -->
-        <link rel="stylesheet" href="assets/css/icofont.min.css">
-        <!-- Nice Select CSS -->
-        <link rel="stylesheet" href="assets/css/nice-select.min.css">
-        <!-- Owl Carousel CSS -->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-        <!-- Magnific Popup CSS -->
-        <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-        <!-- Flaticon CSS -->
-        <link rel="stylesheet" href="assets/fonts/flaticon.css">
-        <!-- Animate CSS -->
-        <link rel="stylesheet" href="assets/css/animate.min.css">
-        <!-- Odometer CSS -->
-        <link rel="stylesheet" href="assets/css/odometer.min.css">
-        <!-- Style CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!-- Responsive CSS -->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <!-- Theme Dark CSS -->
-        <link rel="stylesheet" href="assets/css/theme-dark.css">
-
-        <title>Lyzo - Law Firm and Attorney HTML Template</title>
-        
-        <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    </head>
-    <body>
-
-        <!-- Preloader -->
-        <div class="loader">
-            <div class="d-table">
-                <div class="d-table-cell">
-                    <div class="sk-folding-cube">
-                        <div class="sk-cube1 sk-cube"></div>
-                        <div class="sk-cube2 sk-cube"></div>
-                        <div class="sk-cube4 sk-cube"></div>
-                        <div class="sk-cube3 sk-cube"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Preloader -->
-
-        <!-- Navbar -->
-        <div class="navbar-area fixed-top">
-            <!-- Menu For Mobile Device -->
-            <div class="mobile-nav">
-                <a href="index.html" class="logo">
-                    <img src="assets/img/logo.png" alt="Logo">
-                </a>
-            </div>
-
-            <!-- Menu For Desktop Device -->
-            <div class="main-nav">
-                <div class="container">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/img/logo.png" alt="Logo">
-                        </a>
-                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Home</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="index.html" class="nav-link">Home Page 1</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="index-2.html" class="nav-link">Home Page 2</a>
-                                        </li>
-                                        <li class="nav-item"> 
-                                            <a href="index-3.html" class="nav-link">Home Page 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="about.html" class="nav-link">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Attorneys</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="attorney.html" class="nav-link">Attorney</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="attorney-details.html" class="nav-link">Attorney Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Case Studies</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="case-study.html" class="nav-link">Case Study</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="case-study-details.html" class="nav-link">Case Study Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle active">Blogs</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="blog.html" class="nav-link active">Blog</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="blog-details.html" class="nav-link">Blog Details</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link dropdown-toggle">Pages</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <a href="practice.html" class="nav-link">Practice</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="practice-details.html" class="nav-link">Practice Details</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="appointment.html" class="nav-link">Appointment</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="testimonial.html" class="nav-link">Testimonial</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="faq.html" class="nav-link">FAQ</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="404.html" class="nav-link">404</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="terms-conditions.html" class="nav-link">Terms & Conditions</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">Contact</a>
-                                </li>
-                            </ul>
-                            <div class="side-nav">
-                                <a href="appointment.html">Get Appointment</a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <!-- End Navbar -->
+{% include 'inc/navbar.html' %}
+<!-- End Navbar -->
 
         <!-- Page Title -->
-        <div class="page-title-area title-img-one">
+        <div class="page-title-area title-img-one ">
             <div class="d-table">
                 <div class="d-table-cell">
                     <div class="page-title-text">
-                        <h2>Our Blogs</h2>
+                        <h2>Blog</h2>
                         <ul>
                             <li>
                                 <a href="index.html">Home</a>
@@ -175,7 +20,7 @@
                             <li>
                                 <i class="icofont-simple-right"></i>
                             </li>
-                            <li>Blogs</li>
+                            <li>Blog</li>
                         </ul>
                     </div>
                 </div>
@@ -183,489 +28,73 @@
         </div>
         <!-- End Page Title -->
 
-        <!-- Blog -->
-        <section class="blog-area blog-area-two  pt-100">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="blog-item wow fadeInUp" data-wow-delay=".3s">
-                            <a href="blog-details.html">
-                                <img src="assets/img/home-one/blog/1.jpg" alt="Blog">
-                            </a>
-                            <div class="blog-inner">
-                                <span>Rights Case</span>
-                                <h3>
-                                    <a href="blog-details.html">Justice May For You If You Are Innocent</a>
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <i class="icofont-calendar"></i>
-                                        20 Feb 2024
-                                    </li>
-                                    <li>
-                                        <i class="icofont-user-alt-7"></i>
-                                        <a href="#">John Doe</a>
-                                    </li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut labore.</p>
-                                <a class="blog-link" href="blog-details.html">
-                                    Read More
-                                    <i class="icofont-simple-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="blog-item wow fadeInUp" data-wow-delay=".4s">
-                            <a href="blog-details.html">
-                                <img src="assets/img/home-one/blog/2.jpg" alt="Blog">
-                            </a>
-                            <div class="blog-inner">
-                                <span>Business Case</span>
-                                <h3>
-                                    <a href="blog-details.html">By Whom Your Business Is Being Loss?</a>
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <i class="icofont-calendar"></i>
-                                        20 Feb 2024
-                                    </li>
-                                    <li>
-                                        <i class="icofont-user-alt-7"></i>
-                                        <a href="#">John Doe</a>
-                                    </li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut labore.</p>
-                                <a class="blog-link" href="blog-details.html">
-                                    Read More
-                                    <i class="icofont-simple-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="blog-item wow fadeInUp" data-wow-delay=".5s">
-                            <a href="blog-details.html">
-                                <img src="assets/img/home-one/blog/3.jpg" alt="Blog">
-                            </a>
-                            <div class="blog-inner">
-                                <span>Criminal Case</span>
-                                <h3>
-                                    <a href="blog-details.html">Who Can The Victim A Sue After A Car Accident?</a>
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <i class="icofont-calendar"></i>
-                                        20 Feb 2024
-                                    </li>
-                                    <li>
-                                        <i class="icofont-user-alt-7"></i>
-                                        <a href="#">John Doe</a>
-                                    </li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut labore.</p>
-                                <a class="blog-link" href="blog-details.html">
-                                    Read More
-                                    <i class="icofont-simple-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="blog-item wow fadeInUp" data-wow-delay=".3s">
-                            <a href="blog-details.html">
-                                <img src="assets/img/home-one/blog/4.jpg" alt="Blog">
-                            </a>
-                            <div class="blog-inner">
-                                <span>People Case</span>
-                                <h3>
-                                    <a href="blog-details.html">Why Are People Doing Crime Day By Day?</a>
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <i class="icofont-calendar"></i>
-                                        20 Feb 2024
-                                    </li>
-                                    <li>
-                                        <i class="icofont-user-alt-7"></i>
-                                        <a href="#">John Doe</a>
-                                    </li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut labore.</p>
-                                <a class="blog-link" href="blog-details.html">
-                                    Read More
-                                    <i class="icofont-simple-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="blog-item wow fadeInUp" data-wow-delay=".4s">
-                            <a href="blog-details.html">
-                                <img src="assets/img/home-one/blog/5.jpg" alt="Blog">
-                            </a>
-                            <div class="blog-inner">
-                                <span>Society Case</span>
-                                <h3>
-                                    <a href="blog-details.html">Why Is Crime Increasing In Our Society Now?</a>
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <i class="icofont-calendar"></i>
-                                        20 Feb 2024
-                                    </li>
-                                    <li>
-                                        <i class="icofont-user-alt-7"></i>
-                                        <a href="#">John Doe</a>
-                                    </li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut labore.</p>
-                                <a class="blog-link" href="blog-details.html">
-                                    Read More
-                                    <i class="icofont-simple-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="blog-item wow fadeInUp" data-wow-delay=".5s">
-                            <a href="blog-details.html">
-                                <img src="assets/img/home-one/blog/6.jpg" alt="Blog">
-                            </a>
-                            <div class="blog-inner">
-                                <span>Government Case</span>
-                                <h3>
-                                    <a href="blog-details.html">Will The Government Prevent These Crimes?</a>
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <i class="icofont-calendar"></i>
-                                        20 Feb 2024
-                                    </li>
-                                    <li>
-                                        <i class="icofont-user-alt-7"></i>
-                                        <a href="#">John Doe</a>
-                                    </li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut labore.</p>
-                                <a class="blog-link" href="blog-details.html">
-                                    Read More
-                                    <i class="icofont-simple-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="blog-item wow fadeInUp" data-wow-delay=".3s">
-                            <a href="blog-details.html">
-                                <img src="assets/img/home-one/blog/7.jpg" alt="Blog">
-                            </a>
-                            <div class="blog-inner">
-                                <span>Corrupted Case</span>
-                                <h3>
-                                    <a href="blog-details.html">The Society Is Being Corrupted Because Of Crime</a>
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <i class="icofont-calendar"></i>
-                                        20 Feb 2024
-                                    </li>
-                                    <li>
-                                        <i class="icofont-user-alt-7"></i>
-                                        <a href="#">John Doe</a>
-                                    </li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut labore.</p>
-                                <a class="blog-link" href="blog-details.html">
-                                    Read More
-                                    <i class="icofont-simple-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="blog-item wow fadeInUp" data-wow-delay=".4s">
-                            <a href="blog-details.html">
-                                <img src="assets/img/home-one/blog/8.jpg" alt="Blog">
-                            </a>
-                            <div class="blog-inner">
-                                <span>Justice Case</span>
-                                <h3>
-                                    <a href="blog-details.html">You Will Get Justice If You Are Innocent</a>
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <i class="icofont-calendar"></i>
-                                        20 Feb 2024
-                                    </li>
-                                    <li>
-                                        <i class="icofont-user-alt-7"></i>
-                                        <a href="#">John Doe</a>
-                                    </li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut labore.</p>
-                                <a class="blog-link" href="blog-details.html">
-                                    Read More
-                                    <i class="icofont-simple-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6   col-lg-4">
-                        <div class="blog-item wow fadeInUp" data-wow-delay=".5s">
-                            <a href="blog-details.html">
-                                <img src="assets/img/home-one/blog/9.jpg" alt="Blog">
-                            </a>
-                            <div class="blog-inner">
-                                <span>Crime Case</span>
-                                <h3>
-                                    <a href="blog-details.html">Stay Far From Crime Aware About Law</a>
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <i class="icofont-calendar"></i>
-                                        20 Feb 2024
-                                    </li>
-                                    <li>
-                                        <i class="icofont-user-alt-7"></i>
-                                        <a href="#">John Doe</a>
-                                    </li>
-                                </ul>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor contratc ut labore.</p>
-                                <a class="blog-link" href="blog-details.html">
-                                    Read More
-                                    <i class="icofont-simple-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+
+
+    <section class="blog-area blog-area-three mt-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            {% for blog in page_obj %}
+            <div class="col-sm-6 col-lg-4">
+              <div class="blog-item">
+                <a href="{% url 'blog-details' blog.id %}">
+                  <img src="{{ blog.blog_img.url }}" alt="{{ blog.blog_title }}">
+                </a>
+                <div class="blog-inner">
+                  <span>{{ blog.blog_category }}</span>
+                  <h3>
+                    <a href="{% url 'blog-details' blog.id %}">{{ blog.blog_title| truncatechars:35 }}</a>
+                  </h3>
+                  <ul>
+                    <li>
+                      <i class="icofont-calendar"></i>
+                      {{ blog.blog_date }}
+                    </li>
+                  </ul>
+                  <p>{{ blog.blog_content|truncatewords:20 }}</p>
+                  <a class="blog-link" href="{% url 'blog-details' blog.id %}">
+                    Read More
+                    <i class="icofont-simple-right"></i>
+                  </a>
                 </div>
-                <div class="case-pagination">
-                    <ul>
-                        <li>
-                            <a href="blog.html">
-                                <i class="icofont-simple-left"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="blog.html">1</a>
-                        </li>
-                        <li>
-                            <a href="blog.html">2</a>
-                        </li>
-                        <li>
-                            <a href="blog.html">3</a>
-                        </li>
-                        <li>
-                            <a href="blog.html">
-                                <i class="icofont-simple-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+              </div>
             </div>
-        </section>
-        <!-- End Blog -->
-
-        <!-- Footer -->
-        <footer>
-            
-            <!-- Newsletter -->
-            <div class="newsletter-area">
-                <div class="container">
-                    <img src="assets/img/home-one/newsletter.png" alt="Shape">
-                    <h2>Subscribe Newsletter</h2>
-                    <form class="newsletter-form" data-toggle="validator">
-                        <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
-
-                        <button class="btn contact-btn" type="submit">
-                            Subscribe
-                        </button>
-
-                        <div id="validator-newsletter" class="form-result"></div>
-                    </form>
-                </div>
+            {% endfor %}
+        </div>
+      
+          
+              <!-- Pagination -->
+              <ul class="pagination justify-content-center">
+                {% if page_obj.has_previous %}
+                <li class="page-item">
+                  <a class="page-link" href="?page=1">First</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+                </li>
+                {% endif %}
+          
+                {% for num in page_obj.paginator.page_range %}
+                {% if page_obj.number == num %}
+                <li class="page-item active">
+                  <span class="page-link">{{ num }}</span>
+                </li>
+                {% else %}
+                <li class="page-item">
+                  <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+          
+                {% if page_obj.has_next %}
+                <li class="page-item">
+                  <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+                </li>
+                {% endif %}
+              </ul>
             </div>
-            <!-- End Newsletter -->
-
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="footer-item">
-                            <div class="footer-logo">
-                                <a href="#">
-                                    <img src="assets/img/logo.png" alt="Logo">
-                                </a>
-                                <p>Our Squad of Attorneys are always here to provide you the best and efficient service. Still, if you want to know more about us and our firm, you can connect us through social media.</p>
-                                <ul>
-                                    <li>
-                                        <a href="https://www.youtube.com/" target="_blank">
-                                            <i class="icofont-youtube-play"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <i class="icofont-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
-                                            <i class="icofont-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.twitter.com/" target="_blank">
-                                            <i class="icofont-twitter"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="footer-item">
-                            <div class="footer-service">
-                                <h3>Services</h3>
-                                <ul>
-                                    <li>
-                                        <a href="practice-details.html">
-                                            <i class="icofont-simple-right"></i>
-                                            Family Law
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="practice-details.html">
-                                            <i class="icofont-simple-right"></i>
-                                            Education Law
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="practice-details.html">
-                                            <i class="icofont-simple-right"></i>
-                                            Civil Law
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="practice-details.html">
-                                            <i class="icofont-simple-right"></i>
-                                            Criminal Law
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="practice-details.html">
-                                            <i class="icofont-simple-right"></i>
-                                            Business Law
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-2">
-                        <div class="footer-item">
-                            <div class="footer-service">
-                                <h3>Quick Links</h3>
-                                <ul>
-                                    <li>
-                                        <a href="index.html">
-                                            <i class="icofont-simple-right"></i>
-                                            Home
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">
-                                            <i class="icofont-simple-right"></i>
-                                            About Us
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="blog.html">
-                                            <i class="icofont-simple-right"></i>
-                                            Blogs
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="attorney.html">
-                                            <i class="icofont-simple-right"></i>
-                                            Team
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="testimonial.html">
-                                            <i class="icofont-simple-right"></i>
-                                            Testimonial
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="footer-item">
-                            <div class="footer-find">
-                                <h3>Find Us</h3>
-                                <ul>
-                                    <li>
-                                        <i class="icofont-location-pin"></i>
-                                        28/A Street, New York City
-                                    </li>
-                                    <li>
-                                        <i class="icofont-ui-call"></i>
-                                        <a href="tel:+880123456789">+88 0123 456 789</a>
-                                    </li>
-                                    <li>
-                                        <i class="icofont-at"></i>
-                                        <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#cba3aea7a7a48ba7b2b1a4e5a8a4a6"><span class="__cf_email__" data-cfemail="2e464b4242416e42575441004d4143">[email&#160;protected]</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="copyright-area">
-                    <div class="row justify-content-center">
-                        <div class="col-sm-7 col-lg-6">
-                            <div class="copyright-item">
-                                <p>© Lyzo is Proudly Owned by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
-                            </div>
-                        </div>
-                        <div class="col-sm-5 col-lg-6">
-                            <div class="copyright-item copyright-right">
-                                <a href="terms-conditions.html" target="_blank">Terms & Conditions</a> <span>-</span> 
-                                <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- End Footer -->
-
-
-         <!-- Essential JS -->
-        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <!-- Meanmenu JS -->
-        <script src="assets/js/jquery.meanmenu.js"></script>
-        <!-- Nice Select JS -->
-        <script src="assets/js/jquery.nice-select.min.js"></script>
-        <!-- Form Ajaxchimp JS -->
-		<script src="assets/js/jquery.ajaxchimp.min.js"></script>
-		<!-- Form Validator JS -->
-		<script src="assets/js/form-validator.min.js"></script>
-		<!-- Contact JS -->
-        <script src="assets/js/contact-form-script.js"></script>
-        <!-- Owl Carousel JS -->
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <!-- Odometer JS -->
-        <script src="assets/js/odometer.min.js"></script>
-        <script src="assets/js/jquery.appear.min.js"></script>
-        <!-- Magnific Popup JS -->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!-- Wow JS -->
-        <script src="assets/js/wow.min.js"></script>
-        <!-- Custom JS -->
-        <script src="assets/js/custom.js"></script>
-
-    </body>
-</html>
+          </section>
+             
+ {% endblock content %}
