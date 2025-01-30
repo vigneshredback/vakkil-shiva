@@ -5,9 +5,28 @@ from django.shortcuts import get_object_or_404, render
 
 
 # Create your views here.
+# def index(request):
+#     team = TeamMembers.objects.filter(district_id=1)
+#     return render(request, 'app/index.html',{'teams':team})
+
+
+from django.shortcuts import render
+
 def index(request):
+    # Fetch team members
     team = TeamMembers.objects.filter(district_id=1)
-    return render(request, 'app/index.html',{'teams':team})
+
+    # Check if 'disclaimer_seen' exists in the session
+    if not request.session.get('disclaimer_seen'):
+        request.session['disclaimer_seen'] = True  # Set the session flag
+        show_disclaimer = True  # Show the disclaimer
+    else:
+        show_disclaimer = False  # Hide the disclaimer
+    
+    # Pass the 'show_disclaimer' flag to the template
+    return render(request, 'app/index.html', {'teams': team, 'show_disclaimer': show_disclaimer})
+
+
 
 def about(request):
     return render(request, 'app/about.html')

@@ -168,3 +168,16 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# settings.py
+
+# Use database-backed sessions
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+
+# Set session cookies to expire when the browser closes
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+# Optional: Set session cookie age if you want sessions to last for a fixed time after login
+SESSION_COOKIE_AGE = 3600  # 1 hour (in seconds)
+
+# Optional: Restrict session cookies to HTTPS only
+SESSION_COOKIE_SECURE = False  # Set to True in production with HTTPS

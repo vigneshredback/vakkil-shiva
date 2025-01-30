@@ -19,604 +19,628 @@
         </div> {% endcomment %}
         <!-- End Preloader -->
 
-<!-- Navbar -->
-{% include 'inc/navbar.html' %}
-<!-- End Navbar -->
-
-<div id="disclaimer-popup" class="popup">
+        {% comment %} <div id="disclaimer-popup" class="popup"> {% endcomment %}
+    <div id="disclaimer-popup" class="popup" style="display: {% if show_disclaimer %}flex{% else %}none{% endif %};">
         <div class="popup-content">
-        <h2>Disclaimer</h2>
-        <p>
-            As per the rules of the Bar Council of India, we are not permitted to solicit work or advertise for our services. The user acknowledges the following:
-            There has been no advertisement, personal communication, solicitation, invitation or inducement of any kind whatsoever from us or any of our members to solicit any work through this website.
-            The user wishes to gain more information about us for his/her own information and use.
-            The information about us is provided to the user only on his/her specific request and any information obtained or materials downloaded from this website is completely at the user’s volition and any transmission, receipt or use of this site would not create any lawyer-client relationship.
-        </p>
-        <button id="agree-btn" class="agree-button">I Agree</button>
+            <h2>DISCLAIMER</h2>
+            <p>
+                The rules of the Bar Council of India prohibit law firms from soliciting work or advertising in any manner. By clicking on 'I AGREE', the user acknowledges that:
+            </p>
+            <ul>
+                <li><i class="icofont-simple-right" style="color: #b69d74; margin-right: 10px;"></i> The user wishes to gain more information about us, our practice areas, and our attorneys, for his/her own information and use;</li>
+                <li><i class="icofont-simple-right" style="color: #b69d74; margin-right: 10px;"></i> The information is made available/provided to the user only on his/her specific request, and any information obtained or material downloaded from this website is completely at the user's volition, and any transmission, receipt, or use of this site is not intended to, and will not, create any lawyer-client relationship; and</li>
+                <li><i class="icofont-simple-right" style="color: #b69d74; margin-right: 10px;"></i> None of the information contained on the website is in the nature of a legal opinion or otherwise amounts to any legal advice.</li>
+            </ul>
+            <p>
+                We are not liable for any consequence of any action taken by the user relying on material/information provided under this website. In cases where the user has any legal issues, he/she in all cases must seek independent legal advice.
+            </p>
+            <button id="agree-btn" class="agree-button">I Agree</button>
         </div>
     </div>
-    <div id="main-content" style="display: none;">
-     
-  </div>
- 
+    {% comment %} <div id="main-content" class="content"> {% endcomment %}
+    <div id="main-content" style="display: {% if show_disclaimer %}none{% else %}block{% endif %};">
+        
+     
 
-        <!-- Banner -->
-        <div class="banner-area banner-img-one">
-            <div class="d-table">
-                <div class="d-table-cell">
+                <!-- Navbar -->
+                {% include 'inc/navbar.html' %}
+                <!-- End Navbar -->
+
+
+
+                        <!-- Banner -->
+                        <div class="banner-area banner-img-one">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <div class="container">
+                                        <div class="row align-items-center justify-content-center">
+                                            <div class="col-lg-6">
+                                                <div class="banner-item">
+                                                    <div class="banner-left">
+                                                        <h1>Your legal Solution Start Here!</h1>
+                                                        <p>At Decision, we provide exceptional attorney and legal services designed to address diverse legal needs, including law firm representation, civil law, business law, education law, and criminal law. Led by one of Chennai’s most trusted legal professionals, <spane style="color:#B69D74; font-weight: 600;">Vakkil Shiva</spane> , our team combines extensive expertise with a client-focused approach to deliver effective solutions for even the most complex legal challenges. Renowned for achieving outstanding results, we are committed to guiding clients through every step of their legal journey with professionalism and care.</p>
+                                                        
+                                                        <a href="contact.html">FREE CONSULTATION 
+                                                            <i class="icofont-arrow-right"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="banner-item">
+                                                    <div class="banner-right">
+                                                        <img class="banner-animation" src="{% static 'assets/img/shiva.JPG' %}" alt="Banner">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="banner-bottom">
+                                    <ul>
+                                        <li>
+                                            <i class="flaticon-leader"></i>
+                                        </li>
+                                        <li>
+                                            <span>100% Legal</span>
+                                            <p>Govt Approved</p>
+                                            <img src="{% static 'assets/img/home-one/9.png' %}" alt="Shape">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Banner -->
+
+                        <!-- Help -->
+                        <div class="help-area pb-70">
+                            <div class="container-fluid">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-lg-6">
+                                        <div class="help-item help-left">
+                                            <img src="{% static 'assets/img/home-one/5.jpg' %}" alt="Help">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="help-item">
+                                            <div class="help-right">
+                                                <h2>We Provide Qualified Attorneys for Your Assistance</h2>
+                                                <p>The dedicated team at Vakkil Shiva Law Firm specializes in offering expert legal solutions across various fields, including civil law, business law, education law, and Family law. With a fearless and results-driven approach, we are committed to delivering high-quality legal services to ensure our clients achieve successful outcomes in every case.</p>                                
+                                                <div class="help-inner-left">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="flaticon-checkmark"></i>
+                                                            Browse Our Website
+                                                        </li>
+                                                        <li>
+                                                            <i class="flaticon-checkmark"></i>
+                                                            Choose Services
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="help-inner-right">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="flaticon-checkmark"></i>
+                                                            Quick Reply
+                                                        </li>
+                                                        <li>
+                                                            <i class="flaticon-checkmark"></i>
+                                                            Best Performances
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="help-signature">
+                                                    {% comment %} <img src="{% static 'assets/img/home-one/4.png' %}" alt="Signature"> {% endcomment %}
+                                                </div>
+                                                <a class="cmn-btn mt-5" href="{% url "practice" %}">Learn More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="help-shape">
+                                    <img src="{% static 'assets/img/home-one/6.png' %}" alt="Shape">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Help -->
+
+                        <!-- Practice -->
+                        <section class="practice-area pt-100 pb-70">
+                            <div class="container">
+                                <div class="section-title">
+                                    <span>HOW CAN WE HELP YOU</span>
+                                    <h2>Our Legal Practices Areas</h2>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="practice-item">
+                                            <div class="practice-icon">
+                                                <i class="flaticon-law"></i>
+                                            </div>
+                                            <h3>Civil Law</h3>
+                                            <p>Our attorneys are highly trained and skilled in the Civil Law sector to provide the top service</p>
+                                            <a href="{% url "practice-civil-law" %}">Read More</a>
+                                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
+                                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
+                                            <br>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="practice-item">
+                                            <div class="practice-icon">
+                                                <i class="flaticon-family"></i>
+                                            </div>
+                                            <h3>Family Law</h3>
+                                            
+                                            <p>Attorney of Our Squad is tremendously skillful to acquire a positive outcome and honest</p>
+                                            
+                                            <a href="{% url "practice-family-law" %}">Read More</a>
+                                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
+                                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
+                                            <br>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="practice-item">
+                                            <div class="practice-icon">
+                                                <i class="flaticon-inheritance"></i>
+                                            </div>
+                                            <h3>Business Law</h3>
+                                            <p>You don’t need to worry about your business law till our Master’s Attorneys are here to help you</p>
+                                            <a href="{% url "practice-business-law" %}">Read More</a>
+                                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
+                                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="practice-item">
+                                            <div class="practice-icon">
+                                                <i class="flaticon-mortarboard"></i>
+                                            </div>
+                                            <h3>Education Law</h3>
+                                            <p>Need Attorneys for Educational law? Then, here our Talented & Professionals Attorneys ready to serve you</p>
+                                            <a href="{% url "practice-education-law" %}">Read More</a>
+                                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
+                                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="practice-item">
+                                            <div class="practice-icon">
+                                                <i class="flaticon-auction"></i>
+                                            </div>
+                                            <h3>Criminal Law</h3>
+                                            <p>We provide the Pre-Eminent Attorneys to solve the tough Criminal cases to help you</p>
+                                            <a href="{% url "practice-criminal-law" %}">Read More</a>
+                                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
+                                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
+                                            <br>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="practice-item">
+                                            <div class="practice-icon">
+                                                <i class="flaticon-vulnerability"></i>
+                                            </div>
+                                            <h3>Cyber Law</h3>
+                                            <p>We proffer cyber specialists attorneys who are brilliant in determining these types of cases</p>
+                                            <a href="{% url "practice-cyber-law" %}">Read More</a>
+                                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
+                                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
+                                            <br>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- End Practice -->
+
+                        <!-- Expertise -->
+                        <section class="expertise-area">
+                            <div class="container">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-lg-6">
+                                        <div class="section-title text-left">
+                                            <span>OUR EXPERTISE</span>
+                                            <h2>Law Firm Devoted To Our Clients</h2>
+                                        </div>
+                                    <div class="expertise-item">
+                                            <ul>
+                                                <li class="animate__animated animate__fadeInUp" animate__delay=".3s">
+                                                    <div class="expertise-icon">
+                                                        <i class="flaticon-experience"></i>
+                                                        <img src="{% static 'assets/img/home-one/11.png' %}" alt="Shape">
+                                                    </div>
+                                                    <h3>Experience</h3>
+                                                    <p>Vakkil Shiva's team in Chennai is professional, understanding client needs, and committed to achieving success in every case.</p>
+                                                </li>
+                                                <li class="animate__animated animate__fadeInUp" animate__delay=".4s">
+                                                    <div class="expertise-icon">
+                                                        <i class="flaticon-lawyer"></i>
+                                                        <img src="{% static 'assets/img/home-one/11.png' %}" alt="Shape">
+                                                    </div>
+                                                    <h3>Skilled Attorneys</h3>
+                                                    <p>Our skilled attorneys, led by Vakkil Shiva, create effective strategies to deliver the best results for clients in Chennai.</p
+                                                </li>
+                                                <li class="animate__animated animate__fadeInUp" animate__delay=".5s">
+                                                    <div class="expertise-icon">
+                                                        <i class="flaticon-balance"></i>
+                                                        <img src="{% static 'assets/img/home-one/11.png' %}" alt="Shape">
+                                                    </div>
+                                                    <h3>Legal Process</h3>
+                                                    <p>We handle all legal paperwork and ensure a smooth, lawful process to achieve justice at Vakkil Shiva Law Firm in Chennai.</p>
+                                                </li>
+                                            </ul>
+                                    </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="expertise-image">
+                                            <img src="{% static 'assets/img/home-one/DSC_0470=1.jpg' %}" alt="Expertise">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- End Expertise -->
+
+                        <!-- portfolio -->
+                        {% comment %} <section class="portfolio-area ptb-100">
+                            <div class="container">
+                                <div class="section-title">
+                                    <span>PORTFOLIO</span>
+                                    <h2>Check Out Our Popular Case Studies.</h2>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="portfolio-item">
+                                            <img src="{% static 'assets/img/home-one/portfolio/1.jpg' %}" alt="Portfolio">
+                                            <div class="portfolio-inner">
+                                                <span>Crime</span>
+                                                <h3>
+                                                    <a href="case-study-details.html">Critical Murder Case</a>
+                                                </h3>
+                                                <p>15 Feb 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <div class="portfolio-item">
+                                            <img src="{% static 'assets/img/home-one/portfolio/2.jpg' %}" alt="Portfolio">
+                                            <div class="portfolio-inner">
+                                                <span>Rights</span>
+                                                <h3>
+                                                    <a href="case-study-details.html">Children Rights</a>
+                                                </h3>
+                                                <p>16 Feb 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6   col-lg-4">
+                                        <div class="portfolio-item">
+                                            <img src="{% static 'assets/img/home-one/portfolio/3.jpg' %}" alt="Portfolio">
+                                            <div class="portfolio-inner">
+                                                <span>Finance</span>
+                                                <h3>
+                                                    <a href="case-study-details.html">Money Loundering</a>
+                                                </h3>
+                                                <p>17 Feb 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mb-5">
+                                    <a class="cmn-btn" href="case-study.html">See More</a>
+                                </div>
+                            </div>
+                        </section> {% endcomment %}
+                        <!-- End portfolio -->
+
+                        <!-- Team -->
+                        {% comment %} <section class="team-area">
+                            <div class="container">
+                                <div class="section-title">
+                                    <span>TEAM MEMBER</span>
+                                    <h2>Meet Our Expert Attorneys</h2>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="team-item">
+                                            <img src="{% static 'assets/img/home-one/team/1.jpg' %}" alt="Team">
+                                            <div class="team-inner">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://www.facebook.com/" target="_blank">
+                                                            <i class="icofont-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.instagram.com/" target="_blank">
+                                                            <i class="icofont-instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.twitter.com/" target="_blank">
+                                                            <i class="icofont-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.linkedin.com/" target="_blank">
+                                                            <i class="icofont-linkedin"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <h3>
+                                                    <a href="attorney-details.html">Attor. Jerry Hudson</a>
+                                                </h3>
+                                                <span>Family Consultant</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="team-item">
+                                            <img src="{% static 'assets/img/home-one/team/2.jpg' %}" alt="Team">
+                                            <div class="team-inner">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://www.facebook.com/" target="_blank">
+                                                            <i class="icofont-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.instagram.com/" target="_blank">
+                                                            <i class="icofont-instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.twitter.com/" target="_blank">
+                                                            <i class="icofont-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.linkedin.com/" target="_blank">
+                                                            <i class="icofont-linkedin"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <h3>
+                                                    <a href="attorney-details.html">Attor. Juho Hudson</a>
+                                                </h3>
+                                                <span>Criminal Consultant</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="team-item">
+                                            <img src="{% static 'assets/img/home-one/team/3.jpg' %}" alt="Team">
+                                            <div class="team-inner">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://www.facebook.com/" target="_blank">
+                                                            <i class="icofont-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.instagram.com/" target="_blank">
+                                                            <i class="icofont-instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.twitter.com/" target="_blank">
+                                                            <i class="icofont-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.linkedin.com/" target="_blank">
+                                                            <i class="icofont-linkedin"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <h3>
+                                                    <a href="attorney-details.html">Attor. Sarah Se</a>
+                                                </h3>
+                                                <span>Divorce Consultant</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <div class="team-item">
+                                            <img src="{% static 'assets/img/home-one/team/4.jpg' %}" alt="Team">
+                                            <div class="team-inner">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://www.facebook.com/" target="_blank">
+                                                            <i class="icofont-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.instagram.com/" target="_blank">
+                                                            <i class="icofont-instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.twitter.com/" target="_blank">
+                                                            <i class="icofont-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.linkedin.com/" target="_blank">
+                                                            <i class="icofont-linkedin"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <h3>
+                                                    <a href="attorney-details.html">Attor. Aikin Ward</a>
+                                                </h3>
+                                                <span>Business Consultant</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section> {% endcomment %}
+                        <!-- End Team -->
+                        <!--  -->
+                        <!-- Contact Form -->
+                        <div class="contact-form pb-100" style="margin-top: 200px;">
+                            <!-- Location -->
+                            <div class="loaction-area">
+                                <div class="container">
+                                    <div class="row location-bg">
+                                        <div class="col-sm-6 col-lg-4">
+                                            <div class="location-item">
+                                                <div class="location-icon">
+                                                    <i class="flaticon-pin"></i>
+                                                    <img src="{% static 'assets/img/home-one/12.png' %}" alt="Shape">
+                                                </div>
+                                                <h3>Location</h3>
+                                                <ul>
+                                                    <li> 18c, First Floor ,Albert theatre road, Opposite to Egmore Railway Station ,Chennai-600008</li>
+                                                </ul>
+                                                <a class="location-link" href="https://www.google.com/maps/place/13%C2%B004'39.8%22N+80%C2%B015'49.1%22E/@13.0777151,80.2610719,898m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d13.0777151!4d80.2636468?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">View on gogle map</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-4">
+                                            <div class="location-item">
+                                                <div class="location-icon">
+                                                    <i class="flaticon-email"></i>
+                                                    <img src="{% static 'assets/img/home-one/12.png' %}" alt="Shape">
+                                                </div>
+                                                <h3>Email</h3>
+                                                <ul>
+                                                    <li>
+                                                        {% comment %} <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#fb939e979794bb97828194d5989496"><span class="__cf_email__" data-cfemail="09616c6565664965707366276a6664">[vakkilshiva@gmail.com]</span></a> {% endcomment %}
+                                                        <a href="mailto:vakkilshiva@gmail.com">vakkilshiva@gmail.com</a>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6   col-lg-4">
+                                            <div class="location-item">
+                                                <div class="location-icon">
+                                                    <i class="flaticon-call"></i>
+                                                    <img src="{% static 'assets/img/home-one/12.png' %}" alt="Shape">
+                                                </div>
+                                                <h3>Phone</h3>
+                                                <ul>
+                                                    <li>
+                                                        <a href="tel:+0755543332322">+ 91760 44406</a>
+                                                    </li>
+                                                
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Location -->
+
+                            <div class="container-fluid">
+                                <form id="indexContactForm" method="post" action="{% url 'index_contact' %}">
+                                    {% csrf_token %}
+                                    <div class="row contact-wrap">
+                                        <div class="col-sm-6 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name" placeholder="Your Full Name">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email" placeholder="Your Email">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" name="phone_number" id="phone_number" required data-error="Please enter your number" class="form-control" placeholder="Your Phone">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please enter your subject" placeholder="Subject">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <textarea name="message" class="form-control" id="message" cols="30" rows="8" required data-error="Write your message" placeholder="Case Description"></textarea>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-lg-12">
+                                            <div class="text-center">
+                                                <button type="submit" class="contact-btn">Submit Case</button>
+                                            </div>
+                                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Contact Form -->
+                <!-- Blog -->
+                <section class="blog-area pt-100">
                     <div class="container">
-                        <div class="row align-items-center justify-content-center">
-                            <div class="col-lg-6">
-                                <div class="banner-item">
-                                    <div class="banner-left">
-                                        <h1>Your legal Solution Start Here!</h1>
-                                        <p>At Decision, we provide exceptional attorney and legal services designed to address diverse legal needs, including law firm representation, civil law, business law, education law, and criminal law. Led by one of Chennai’s most trusted legal professionals, <spane style="color:#B69D74; font-weight: 600;">Vakkil Shiva</spane> , our team combines extensive expertise with a client-focused approach to deliver effective solutions for even the most complex legal challenges. Renowned for achieving outstanding results, we are committed to guiding clients through every step of their legal journey with professionalism and care.</p>
-                                        
-                                        <a href="contact.html">FREE CONSULTATION 
-                                            <i class="icofont-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="banner-item">
-                                    <div class="banner-right">
-                                        <img class="banner-animation" src="{% static 'assets/img/shiva.JPG' %}" alt="Banner">
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="section-title">
+                            <span>BLOG</span>
+                            <h2>Our Latest Blog</h2>   
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="banner-bottom">
-                    <ul>
-                        <li>
-                            <i class="flaticon-leader"></i>
-                        </li>
-                        <li>
-                            <span>100% Legal</span>
-                            <p>Govt Approved</p>
-                            <img src="{% static 'assets/img/home-one/9.png' %}" alt="Shape">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- End Banner -->
+                    
+                    
+                </section>
+                <!-- End Blog -->
+</div>
 
-        <!-- Help -->
-        <div class="help-area pb-70">
-            <div class="container-fluid">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="help-item help-left">
-                            <img src="{% static 'assets/img/home-one/5.jpg' %}" alt="Help">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="help-item">
-                            <div class="help-right">
-                                <h2>We Provide Qualified Attorneys for Your Assistance</h2>
-                                <p>The dedicated team at Vakkil Shiva Law Firm specializes in offering expert legal solutions across various fields, including civil law, business law, education law, and Family law. With a fearless and results-driven approach, we are committed to delivering high-quality legal services to ensure our clients achieve successful outcomes in every case.</p>                                
-                                <div class="help-inner-left">
-                                    <ul>
-                                        <li>
-                                            <i class="flaticon-checkmark"></i>
-                                            Browse Our Website
-                                        </li>
-                                        <li>
-                                            <i class="flaticon-checkmark"></i>
-                                            Choose Services
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="help-inner-right">
-                                    <ul>
-                                        <li>
-                                            <i class="flaticon-checkmark"></i>
-                                            Quick Reply
-                                        </li>
-                                        <li>
-                                            <i class="flaticon-checkmark"></i>
-                                            Best Performances
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="help-signature">
-                                    {% comment %} <img src="{% static 'assets/img/home-one/4.png' %}" alt="Signature"> {% endcomment %}
-                                </div>
-                                <a class="cmn-btn mt-5" href="{% url "practice" %}">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="help-shape">
-                    <img src="{% static 'assets/img/home-one/6.png' %}" alt="Shape">
-                </div>
-            </div>
-        </div>
-        <!-- End Help -->
-
-        <!-- Practice -->
-        <section class="practice-area pt-100 pb-70">
-            <div class="container">
-                <div class="section-title">
-                    <span>HOW CAN WE HELP YOU</span>
-                    <h2>Our Legal Practices Areas</h2>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="practice-item">
-                            <div class="practice-icon">
-                                <i class="flaticon-law"></i>
-                            </div>
-                            <h3>Civil Law</h3>
-                            <p>Our attorneys are highly trained and skilled in the Civil Law sector to provide the top service</p>
-                            <a href="{% url "practice-civil-law" %}">Read More</a>
-                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
-                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="practice-item">
-                            <div class="practice-icon">
-                                <i class="flaticon-family"></i>
-                            </div>
-                            <h3>Family Law</h3>
-                            
-                            <p>Attorney of Our Squad is tremendously skillful to acquire a positive outcome and honest</p>
-                            
-                            <a href="{% url "practice-family-law" %}">Read More</a>
-                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
-                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="practice-item">
-                            <div class="practice-icon">
-                                <i class="flaticon-inheritance"></i>
-                            </div>
-                            <h3>Business Law</h3>
-                            <p>You don’t need to worry about your business law till our Master’s Attorneys are here to help you</p>
-                            <a href="{% url "practice-business-law" %}">Read More</a>
-                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
-                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="practice-item">
-                            <div class="practice-icon">
-                                <i class="flaticon-mortarboard"></i>
-                            </div>
-                            <h3>Education Law</h3>
-                            <p>Need Attorneys for Educational law? Then, here our Talented & Professionals Attorneys ready to serve you</p>
-                            <a href="{% url "practice-education-law" %}">Read More</a>
-                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
-                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="practice-item">
-                            <div class="practice-icon">
-                                <i class="flaticon-auction"></i>
-                            </div>
-                            <h3>Criminal Law</h3>
-                            <p>We provide the Pre-Eminent Attorneys to solve the tough Criminal cases to help you</p>
-                            <a href="{% url "practice-criminal-law" %}">Read More</a>
-                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
-                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="practice-item">
-                            <div class="practice-icon">
-                                <i class="flaticon-vulnerability"></i>
-                            </div>
-                            <h3>Cyber Law</h3>
-                            <p>We proffer cyber specialists attorneys who are brilliant in determining these types of cases</p>
-                            <a href="{% url "practice-cyber-law" %}">Read More</a>
-                            <img class="practice-shape-one" src="{% static 'assets/img/home-one/7.png' %}" alt="Shape">
-                            <img class="practice-shape-two" src="{% static 'assets/img/home-one/8.png' %}" alt="Shape">
-                            <br>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Practice -->
-
-        <!-- Expertise -->
-        <section class="expertise-area">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="section-title text-left">
-                            <span>OUR EXPERTISE</span>
-                            <h2>Law Firm Devoted To Our Clients</h2>
-                        </div>
-                       <div class="expertise-item">
-                            <ul>
-                                <li class="animate__animated animate__fadeInUp" animate__delay=".3s">
-                                    <div class="expertise-icon">
-                                        <i class="flaticon-experience"></i>
-                                        <img src="{% static 'assets/img/home-one/11.png' %}" alt="Shape">
-                                    </div>
-                                    <h3>Experience</h3>
-                                    <p>Vakkil Shiva's team in Chennai is professional, understanding client needs, and committed to achieving success in every case.</p>
-                                </li>
-                                <li class="animate__animated animate__fadeInUp" animate__delay=".4s">
-                                    <div class="expertise-icon">
-                                        <i class="flaticon-lawyer"></i>
-                                        <img src="{% static 'assets/img/home-one/11.png' %}" alt="Shape">
-                                    </div>
-                                    <h3>Skilled Attorneys</h3>
-                                    <p>Our skilled attorneys, led by Vakkil Shiva, create effective strategies to deliver the best results for clients in Chennai.</p
-                                </li>
-                                <li class="animate__animated animate__fadeInUp" animate__delay=".5s">
-                                    <div class="expertise-icon">
-                                        <i class="flaticon-balance"></i>
-                                        <img src="{% static 'assets/img/home-one/11.png' %}" alt="Shape">
-                                    </div>
-                                    <h3>Legal Process</h3>
-                                    <p>We handle all legal paperwork and ensure a smooth, lawful process to achieve justice at Vakkil Shiva Law Firm in Chennai.</p>
-                                </li>
-                            </ul>
-                       </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="expertise-image">
-                            <img src="{% static 'assets/img/home-one/DSC_0470=1.jpg' %}" alt="Expertise">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Expertise -->
-
-        <!-- portfolio -->
-        {% comment %} <section class="portfolio-area ptb-100">
-            <div class="container">
-                <div class="section-title">
-                    <span>PORTFOLIO</span>
-                    <h2>Check Out Our Popular Case Studies.</h2>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="portfolio-item">
-                            <img src="{% static 'assets/img/home-one/portfolio/1.jpg' %}" alt="Portfolio">
-                            <div class="portfolio-inner">
-                                <span>Crime</span>
-                                <h3>
-                                    <a href="case-study-details.html">Critical Murder Case</a>
-                                </h3>
-                                <p>15 Feb 2024</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="portfolio-item">
-                            <img src="{% static 'assets/img/home-one/portfolio/2.jpg' %}" alt="Portfolio">
-                            <div class="portfolio-inner">
-                                <span>Rights</span>
-                                <h3>
-                                    <a href="case-study-details.html">Children Rights</a>
-                                </h3>
-                                <p>16 Feb 2024</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6   col-lg-4">
-                        <div class="portfolio-item">
-                            <img src="{% static 'assets/img/home-one/portfolio/3.jpg' %}" alt="Portfolio">
-                            <div class="portfolio-inner">
-                                <span>Finance</span>
-                                <h3>
-                                    <a href="case-study-details.html">Money Loundering</a>
-                                </h3>
-                                <p>17 Feb 2024</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mb-5">
-                    <a class="cmn-btn" href="case-study.html">See More</a>
-                </div>
-            </div>
-        </section> {% endcomment %}
-        <!-- End portfolio -->
-
-        <!-- Team -->
-        {% comment %} <section class="team-area">
-            <div class="container">
-                <div class="section-title">
-                    <span>TEAM MEMBER</span>
-                    <h2>Meet Our Expert Attorneys</h2>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="team-item">
-                            <img src="{% static 'assets/img/home-one/team/1.jpg' %}" alt="Team">
-                            <div class="team-inner">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <i class="icofont-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
-                                            <i class="icofont-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.twitter.com/" target="_blank">
-                                            <i class="icofont-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/" target="_blank">
-                                            <i class="icofont-linkedin"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <h3>
-                                    <a href="attorney-details.html">Attor. Jerry Hudson</a>
-                                </h3>
-                                <span>Family Consultant</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="team-item">
-                            <img src="{% static 'assets/img/home-one/team/2.jpg' %}" alt="Team">
-                            <div class="team-inner">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <i class="icofont-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
-                                            <i class="icofont-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.twitter.com/" target="_blank">
-                                            <i class="icofont-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/" target="_blank">
-                                            <i class="icofont-linkedin"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <h3>
-                                    <a href="attorney-details.html">Attor. Juho Hudson</a>
-                                </h3>
-                                <span>Criminal Consultant</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="team-item">
-                            <img src="{% static 'assets/img/home-one/team/3.jpg' %}" alt="Team">
-                            <div class="team-inner">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <i class="icofont-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
-                                            <i class="icofont-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.twitter.com/" target="_blank">
-                                            <i class="icofont-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/" target="_blank">
-                                            <i class="icofont-linkedin"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <h3>
-                                    <a href="attorney-details.html">Attor. Sarah Se</a>
-                                </h3>
-                                <span>Divorce Consultant</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="team-item">
-                            <img src="{% static 'assets/img/home-one/team/4.jpg' %}" alt="Team">
-                            <div class="team-inner">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank">
-                                            <i class="icofont-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank">
-                                            <i class="icofont-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.twitter.com/" target="_blank">
-                                            <i class="icofont-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/" target="_blank">
-                                            <i class="icofont-linkedin"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <h3>
-                                    <a href="attorney-details.html">Attor. Aikin Ward</a>
-                                </h3>
-                                <span>Business Consultant</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> {% endcomment %}
-        <!-- End Team -->
-        <!--  -->
-        <!-- Contact Form -->
-        <div class="contact-form pb-100" style="margin-top: 200px;">
-            <!-- Location -->
-            <div class="loaction-area">
-                <div class="container">
-                    <div class="row location-bg">
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="location-item">
-                                <div class="location-icon">
-                                    <i class="flaticon-pin"></i>
-                                    <img src="{% static 'assets/img/home-one/12.png' %}" alt="Shape">
-                                </div>
-                                <h3>Location</h3>
-                                <ul>
-                                    <li> 18c, First Floor ,Albert theatre road, Opposite to Egmore Railway Station ,Chennai-600008</li>
-                                </ul>
-                                <a class="location-link" href="https://www.google.com/maps/place/13%C2%B004'39.8%22N+80%C2%B015'49.1%22E/@13.0777151,80.2610719,898m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d13.0777151!4d80.2636468?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">View on gogle map</a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="location-item">
-                                <div class="location-icon">
-                                    <i class="flaticon-email"></i>
-                                    <img src="{% static 'assets/img/home-one/12.png' %}" alt="Shape">
-                                </div>
-                                <h3>Email</h3>
-                                <ul>
-                                    <li>
-                                        {% comment %} <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#fb939e979794bb97828194d5989496"><span class="__cf_email__" data-cfemail="09616c6565664965707366276a6664">[vakkilshiva@gmail.com]</span></a> {% endcomment %}
-                                        <a href="mailto:vakkilshiva@gmail.com">vakkilshiva@gmail.com</a>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-6   col-lg-4">
-                            <div class="location-item">
-                                <div class="location-icon">
-                                    <i class="flaticon-call"></i>
-                                    <img src="{% static 'assets/img/home-one/12.png' %}" alt="Shape">
-                                </div>
-                                <h3>Phone</h3>
-                                <ul>
-                                    <li>
-                                        <a href="tel:+0755543332322">+ 91760 44406</a>
-                                    </li>
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Location -->
-
-            <div class="container-fluid">
-                <form id="indexContactForm" method="post" action="{% url 'index_contact' %}">
-                    {% csrf_token %}
-                    <div class="row contact-wrap">
-                        <div class="col-sm-6 col-lg-6">
-                            <div class="form-group">
-                                <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name" placeholder="Your Full Name">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-6">
-                            <div class="form-group">
-                                <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email" placeholder="Your Email">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-6">
-                            <div class="form-group">
-                                <input type="text" name="phone_number" id="phone_number" required data-error="Please enter your number" class="form-control" placeholder="Your Phone">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-lg-6">
-                            <div class="form-group">
-                                <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please enter your subject" placeholder="Subject">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 col-lg-12">
-                            <div class="form-group">
-                                <textarea name="message" class="form-control" id="message" cols="30" rows="8" required data-error="Write your message" placeholder="Case Description"></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 col-lg-12">
-                            <div class="text-center">
-                                <button type="submit" class="contact-btn">Submit Case</button>
-                            </div>
-                            <div id="msgSubmit" class="h3 text-center hidden"></div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <!-- End Contact Form -->
- <!-- Blog -->
- <section class="blog-area pt-100">
-    <div class="container">
-        <div class="section-title">
-            <span>BLOG</span>
-            <h2>Our Latest Blog</h2>   
-        </div>
-      
-    
-</section>
-<!-- End Blog -->
-    </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
+{% comment %} <script>
+    document.addEventListener("DOMContentLoaded", () => {
         const popup = document.getElementById("disclaimer-popup");
         const mainContent = document.getElementById("main-content");
         const agreeBtn = document.getElementById("agree-btn");
-    
+
         // Show popup if "agreed" is not in localStorage
         if (!localStorage.getItem("disclaimerAgreed")) {
-        popup.style.display = "flex";
+            popup.style.display = "flex";
         } else {
-        mainContent.style.display = "block";
+            mainContent.style.display = "block";
         }
-    
+
         // Handle "I Agree" button click
         agreeBtn.addEventListener("click", () => {
-        localStorage.setItem("disclaimerAgreed", "true");
-        popup.style.display = "none";
-        mainContent.style.display = "block";
+            localStorage.setItem("disclaimerAgreed", "true");
+            popup.style.display = "none";
+            mainContent.style.display = "block";
         });
     });
-    </script>
+</script> {% endcomment %}
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const popup = document.getElementById("disclaimer-popup");
+        const mainContent = document.getElementById("main-content");
+        const agreeBtn = document.getElementById("agree-btn");
+
+        // Handle "I Agree" button click
+        agreeBtn.addEventListener("click", () => {
+            popup.style.display = "none"; // Hide the popup
+            mainContent.style.display = "block"; // Show the main content
+        });
+    });
+</script>
+
+
 {% endblock content %} 
