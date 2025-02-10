@@ -38,7 +38,6 @@ def attorney(request):
         selected_district = request.POST.get('district')
         team = TeamMembers.objects.filter(district=Districts.objects.get(name=selected_district).id)
         return render(request, 'app/attorney.html',{'teams':team,'selected_district':selected_district,'districts':district})
-    # print("get request")
     return render(request, 'app/attorney.html',{'teams':team,'selected_district':'chennai','districts':district})
 
 def attorney_details(request,id):
